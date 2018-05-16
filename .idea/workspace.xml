@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef626d50-5988-4eb7-9a21-c402b33d6e32" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSetsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSettingsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSettingsSetImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionTypeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionTypeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/ResultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/ResultImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,6 +35,32 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="testingSystem@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="testingSystem@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="testingSystem@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="testingSystem: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="testingSystem@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="testingSystem: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="testingSystem@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="testingSystem: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -46,119 +69,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="QuestionTypeImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionTypeImpl.java">
+      <file leaf-file-name="TestSettingsSetImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSettingsSetImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="59">
+              <caret line="4" column="69" lean-forward="true" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/ResultImpl.java">
+      <file leaf-file-name="hibernate_sequence" pinned="false" current-in-tab="false">
+        <entry file="das://3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c/database/testingSystem/schema/public/sequence/hibernate_sequence">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java">
+      <file leaf-file-name="myTestingSystem.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myTestingSystem.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="myTestingSystem.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/myTestingSystem.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="uiDesigner.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="dataSources.local.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/dataSources.local.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="compiler.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="UsersImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/UsersImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IStatusTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IStatusTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="7" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatusTableImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubjectImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ITest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="108" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ISubject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ISubject.java">
+      <file leaf-file-name="ITestSettingsSet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettingsSet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="7" column="60" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionSettingsSetImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsSetImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,9 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/QuestionSettingSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/QuestionType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/Subject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/StatusTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/Test.java" />
@@ -233,6 +202,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSetsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSettingsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSettingsSetImpl.java" />
       </list>
     </option>
   </component>
@@ -280,6 +252,11 @@
             <path>
               <item name="freeTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="myTestingSystem" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="freeTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myTestingSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,26 +288,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="freeTest" type="462c0819:PsiDirectoryNode" />
               <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freeTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myTestingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="freeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="iImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freeTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myTestingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="freeTest" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-              <item name="implementation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -449,7 +406,7 @@
       <workItem from="1526397114773" duration="7503000" />
       <workItem from="1526409821322" duration="5788000" />
       <workItem from="1526487867596" duration="9361000" />
-      <workItem from="1526510229650" duration="864000" />
+      <workItem from="1526510229650" duration="1847000" />
     </task>
     <task id="LOCAL-00001" summary="last working">
       <created>1526487897195</created>
@@ -469,27 +426,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23516000" />
+    <option name="totallyTimeSpent" value="24499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1546" height="874" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Messages" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.114996634" side_tool="true" visible="true" weight="0.24932249" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.11641992" side_tool="true" visible="true" weight="0.2601626" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32974428" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.8850034" weight="0.26136363" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.8835801" visible="true" weight="0.2601626" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2604307" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2604307" />
       <window_info anchor="right" id="Database" order="0" visible="true" weight="0.11170929" />
       <window_info id="Learn" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -502,7 +459,6 @@
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info id="Nl-Palette" order="7" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="1" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Properties" order="7" />
@@ -524,188 +480,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/repository/QuestionAnswerSetRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/repository/QuestionLevelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/freeTest:freeTest:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>freeTest:freeTest:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">freeTest:freeTest:1.0-SNAPSHOT</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.1.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.1.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.1.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.1.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0/org.apache.logging.log4j:log4j-api:jar:2.10.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.1.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.25</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/javax.annotation:javax.annotation-api:jar:1.3.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.1.RELEASE/org.yaml:snakeyaml:jar:1.19</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:2.0.1.RELEASE/org.springframework:spring-aop:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:2.0.1.RELEASE/org.aspectj:aspectjweaver:jar:1.8.13</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.1.RELEASE/com.zaxxer:HikariCP:jar:2.7.8</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.1.RELEASE/org.springframework:spring-jdbc:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final/org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final/org.javassist:javassist:jar:3.22.0-GA</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final/antlr:antlr:jar:2.7.7</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final/org.jboss:jandex:jar:2.0.3.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final/com.fasterxml:classmate:jar:1.3.4</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final/dom4j:dom4j:jar:1.6.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.hibernate:hibernate-core:jar:5.2.16.Final/org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/javax.transaction:javax.transaction-api:jar:1.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.data:spring-data-jpa:jar:2.0.6.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.data:spring-data-jpa:jar:2.0.6.RELEASE/org.springframework.data:spring-data-commons:jar:2.0.6.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.data:spring-data-jpa:jar:2.0.6.RELEASE/org.springframework:spring-orm:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.data:spring-data-jpa:jar:2.0.6.RELEASE/org.springframework:spring-context:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.data:spring-data-jpa:jar:2.0.6.RELEASE/org.springframework:spring-context:jar:5.0.5.RELEASE/org.springframework:spring-expression:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.data:spring-data-jpa:jar:2.0.6.RELEASE/org.springframework:spring-tx:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.data:spring-data-jpa:jar:2.0.6.RELEASE/org.springframework:spring-beans:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework.data:spring-data-jpa:jar:2.0.6.RELEASE/org.slf4j:slf4j-api:jar:1.7.25</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-jpa:jar:2.0.1.RELEASE/org.springframework:spring-aspects:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.postgresql:postgresql:jar:42.2.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-test:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2/org.ow2.asm:asm:jar:5.0.4</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/junit:junit:jar:4.12</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.assertj:assertj-core:jar:3.9.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.mockito:mockito-core:jar:2.15.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.mockito:mockito-core:jar:2.15.0/net.bytebuddy:byte-buddy:jar:1.7.11</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.mockito:mockito-core:jar:2.15.0/net.bytebuddy:byte-buddy-agent:jar:1.7.11</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.mockito:mockito-core:jar:2.15.0/org.objenesis:objenesis:jar:2.6</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.hamcrest:hamcrest-library:jar:1.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.springframework:spring-core:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.springframework:spring-core:jar:5.0.5.RELEASE/org.springframework:spring-jcl:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.springframework:spring-test:jar:5.0.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.0.1.RELEASE/org.xmlunit:xmlunit-core:jar:2.5.1</node>
-            <node x="" y="">org.projectlombok:lombok:jar:1.16.16</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.15879938429964083" x="1939.0" y="520.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/1dda9840-ff0a-4b8e-8df8-cf08547adfa0.SCHEMA:testingSystem.public">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>1dda9840-ff0a-4b8e-8df8-cf08547adfa0.SCHEMA:testingSystem.public</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="358.0" y="281.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.SCHEMA:testingSystem.public">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.SCHEMA:testingSystem.public</OriginalElement>
-          <nodes>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.answer_status</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.questions</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.status_table</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.z1</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.question_setting_set</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.test_settings</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.subject</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.users</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.test_settings_set</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.question_type</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.question_level</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.result</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.question_settings</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.question_answer_set</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.test</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.test_sets</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.answers</node>
-            <node x="" y="">3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c.TABLE:testingSystem.public.question_settins_set</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5506329113924051" x="716.0" y="489.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/Answers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/AnswerStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/repository/UsersRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/TestSettingsSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/TestSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IAnswersStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -745,13 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/UsersImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -801,6 +568,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -815,27 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettingsSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1005,15 +754,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="108" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
+        <state relative-caret-position="102">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSetsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="9" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSettingsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettingsSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestSettingsSetImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="4" column="69" lean-forward="true" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3ca7ab74-2fa9-4af7-ae37-3e75dc2fc22c/database/testingSystem/schema/public/sequence/hibernate_sequence">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myTestingSystem.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/myTestingSystem.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources.local.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/UsersImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
