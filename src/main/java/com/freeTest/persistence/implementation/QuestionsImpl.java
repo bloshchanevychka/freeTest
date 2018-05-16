@@ -11,6 +11,7 @@ public class QuestionsImpl implements IQuestions {
     public QuestionsImpl(QuestionsRepository qRepository) {
         this.qRepository = qRepository;
     }
+
     @Override
     public Optional<Questions> findQuestionsById(Long questionId) {
         return qRepository.findById(questionId);
@@ -24,6 +25,5 @@ public class QuestionsImpl implements IQuestions {
 
     @Override
     public Optional<Questions> findQuestionsByQuestionText(String text) {return Optional.ofNullable(qRepository.findQuestionsByQuestionText(text));}
-
 
 }

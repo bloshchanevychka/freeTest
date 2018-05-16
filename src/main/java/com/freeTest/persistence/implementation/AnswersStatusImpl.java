@@ -12,6 +12,7 @@ public class AnswersStatusImpl implements IAnswersStatus {
     public AnswersStatusImpl(AnswersStatusRepository aRepository) {
         this.aSRepository = aSRepository;
     }
+
     @Override
     public Optional<AnswerStatus> findAnswerStatusById(Long id) {
         return aSRepository.findById(id);

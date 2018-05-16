@@ -12,6 +12,7 @@ public class QuestionLevelImpl implements IQuestionLevel {
     public QuestionLevelImpl(QuestionLevelRepository setRepository) {
         this.qlRepository = qlRepository;
     }
+
     @Override
     public Optional<QuestionLevel> findQuestionLevelById(Long id) {
         return qlRepository.findById(id);
