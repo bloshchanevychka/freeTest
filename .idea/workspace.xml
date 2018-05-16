@@ -257,7 +257,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
-    <option name="width" value="1933" />
+    <option name="width" value="1934" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -855,7 +855,7 @@
           <settings layout="Hierarchic Group" zoom="1.0" x="357.5" y="280.5" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
+            <Category />
             <Category>Columns</Category>
           </Categories>
         </state>
@@ -904,7 +904,7 @@
           <settings layout="Hierarchic Group" zoom="0.5506329113924051" x="716.2068965517242" y="489.41379310344826" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
+            <Category />
             <Category>Columns</Category>
           </Categories>
         </state>
