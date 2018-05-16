@@ -1,4 +1,19 @@
 package com.freeTest.persistence.implementation;
 
-public class StatusImpl {
+import com.freeTest.persistence.entity.StatusTable;
+import com.freeTest.persistence.iImpl.IStatusTable;
+import com.freeTest.persistence.repository.StatusTableRepository;
+import java.util.Optional;
+
+public class StatusTableImpl implements IStatusTable {
+    private StatusTableRepository statusTableRepository;
+
+    public StatusTableImpl(StatusTableRepository statusTableRepository) {this.statusTableRepository = statusTableRepository;}
+
+    @Override
+    public Optional<StatusTable> findStatusTableById (Long sId) {return statusTableRepository.findById(sId);}
+
+    @Override
+    public Optional<StatusTable> findStatusTableByStatus (Integer status) {return Optional.ofNullable(statusTableRepository.findStatusTableByStatus(status));}
+
 }

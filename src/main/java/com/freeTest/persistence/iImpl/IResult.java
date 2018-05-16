@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.Optional;
 
 public interface IResult {
-
     Optional <Result> findResultById (Long rId);
     Optional <Result> findResultByTestDate (Date dateOfTest);
     Optional <Result> findResultByTestId (Long testId);

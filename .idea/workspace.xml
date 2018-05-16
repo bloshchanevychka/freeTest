@@ -2,39 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef626d50-5988-4eb7-9a21-c402b33d6e32" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsSetImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettingsSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettingsSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IStatusTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IStatusTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ISubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ISubject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettingsSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITestSettingsSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/AnswersStatusImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/AnswersStatusImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionAnswerSetImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionAnswerSetImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionLevelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionLevelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/UsersImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/UsersImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IQuestionSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IQuestionSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IQuestionSettingsSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IQuestionSettingsSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IQuestionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IQuestionType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IStatusTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/IStatusTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ISubject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ISubject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ITest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ITestSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ITestSets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ITestSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ITestSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ITestSettingsSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/iImpl/ITestSettingsSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/AnswersStatusImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/AnswersStatusImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/QuestionAnswerSetImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/QuestionAnswerSetImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/QuestionLevelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/QuestionLevelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/QuestionsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/QuestionsImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/UsersImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/freeTest/persistence/implementation/UsersImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionTypeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionTypeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/ResultImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/ResultImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,8 +46,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AnswersImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/AnswersImpl.java">
+      <file leaf-file-name="QuestionTypeImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionTypeImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/ResultImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
@@ -81,23 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IQuestions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IQuestionSettings.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettings.java">
+      <file leaf-file-name="IResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,11 +79,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionSettingsImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsImpl.java">
+      <file leaf-file-name="IStatusTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IStatusTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="85">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="7" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatusTableImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubjectImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ITest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="108" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISubject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ISubject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="60" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,62 +157,8 @@
       <file leaf-file-name="QuestionSettingsSetImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsSetImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionsImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionsImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionLevelImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionLevelImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionAnswerSetImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionAnswerSetImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="48" lean-forward="true" selection-start-column="48" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IQuestionLevel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IQuestionSettingsSet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettingsSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="60" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="60" />
+            <state relative-caret-position="323">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -199,12 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/repository/ResultRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/AnswerStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/QuestionAnswerSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/QuestionLevel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/Questions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/QuestionSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/QuestionSettingSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/QuestionType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/Result.java" />
@@ -243,13 +220,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ISubject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IStatusTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettingsSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsSetImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionTypeImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/ResultImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java" />
       </list>
     </option>
   </component>
@@ -276,9 +259,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="width" value="1934" />
-    <option name="height" value="1050" />
+    <option name="width" value="1933" />
+    <option name="height" value="1093" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -287,6 +269,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,7 +336,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,7 +448,8 @@
       <updated>1526397110402</updated>
       <workItem from="1526397114773" duration="7503000" />
       <workItem from="1526409821322" duration="5788000" />
-      <workItem from="1526487867596" duration="6347000" />
+      <workItem from="1526487867596" duration="9361000" />
+      <workItem from="1526510229650" duration="864000" />
     </task>
     <task id="LOCAL-00001" summary="last working">
       <created>1526487897195</created>
@@ -486,29 +469,28 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19638000" />
+    <option name="totallyTimeSpent" value="23516000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1547" height="840" extended-state="0" />
+    <frame x="0" y="0" width="1546" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Messages" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.114996634" side_tool="true" visible="true" weight="0.26136363" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.114996634" side_tool="true" visible="true" weight="0.24932249" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32974428" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.8850034" visible="true" weight="0.26136363" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.8850034" weight="0.26136363" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25689307" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.111634165" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2604307" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.11170929" />
       <window_info id="Learn" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24966353" />
@@ -520,6 +502,7 @@
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info id="Nl-Palette" order="7" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="1" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Properties" order="7" />
@@ -541,44 +524,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/entity/TestSets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/repository/AnswersRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/repository/AnswersStatusRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/repository/QuestionAnswerSetRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -590,9 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,9 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,9 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,9 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,9 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,9 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="53" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,9 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="53" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -849,9 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="12" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -866,9 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -883,9 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,9 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,9 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,41 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IStatusTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ISubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IAnswers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -983,9 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,9 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="60" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,9 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,37 +888,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsSetImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,18 +900,119 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionSettingsSetImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IQuestionSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/IStatusTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="7" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ISubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="60" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/QuestionTypeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/ResultImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/StatusTableImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/SubjectImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/iImpl/ITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/freeTest/persistence/implementation/TestImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="108" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
           </folding>
         </state>
       </provider>
