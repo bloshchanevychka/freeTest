@@ -38,6 +38,31 @@
             <artifactId>lombok</artifactId>
             <version>1.16.16</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>au.com.onegeek</groupId>-->
+            <!--<artifactId>respite-core_2.11</artifactId>-->
+            <!--<version>0.3.5</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>au.com.onegeek</groupId>-->
+            <!--<artifactId>respite-core_2.10</artifactId>-->
+            <!--<version>0.3.3</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.spring-web</artifactId>
+            <version>5.0.4.RELEASE_1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.teamcity.webapp</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>6.5.5</version>
+        </dependency>
     </dependencies>
 
     <build>
