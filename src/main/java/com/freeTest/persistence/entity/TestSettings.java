@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Entity
 public class TestSettings implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long testSettingId;
     private Long timeSettings;
     private Boolean securitySettings;

@@ -11,7 +11,7 @@ import java.util.Date;
 @Entity
 public class Result implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long resId;
     private Long testId;
     private Long userId;

@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Data
 public class Answers implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long aId;
     private String answer;
     private Long status;

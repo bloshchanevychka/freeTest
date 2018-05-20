@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Entity
 public class Test implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long testId;
     private String testName;
     private Long testSubj;

@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Entity
 public class QuestionSettingSet implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long qSettingsSetId;
     private Long qId;
     private Long sId;

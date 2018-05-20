@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Entity
 public class QuestionAnswerSet implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long setId;
     private Long question;
     private Long answer;

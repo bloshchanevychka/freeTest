@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Entity
 public class StatusTable implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long statusId;
     private Integer status;
 

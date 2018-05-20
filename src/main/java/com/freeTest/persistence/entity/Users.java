@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Entity
 public class Users implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long uId;
     private String uLogin;
     private String uFullName;

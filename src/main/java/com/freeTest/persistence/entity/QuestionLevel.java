@@ -10,13 +10,13 @@ import java.io.Serializable;
 @Entity
 public class QuestionLevel implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long questionLevelId;
     private String questionLevel;
 
     //protected QuestionLevel () {}
 
-    public QuestionLevel(String questionLevel) {
-        this.questionLevel = questionLevel;
+    public QuestionLevel(String level) {
+        this.questionLevel = level;
     }
 }

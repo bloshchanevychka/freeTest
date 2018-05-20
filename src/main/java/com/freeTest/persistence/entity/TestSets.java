@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Entity
 public class TestSets implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long testSetId;
     private Long testId;
     private Long questionId;

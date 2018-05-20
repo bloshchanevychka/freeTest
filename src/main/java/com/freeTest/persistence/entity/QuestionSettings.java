@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Entity
 public class QuestionSettings implements Serializable {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long setttingId;
     private Integer answAmount;
     private String help;
