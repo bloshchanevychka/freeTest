@@ -15,17 +15,14 @@ public class QuestionSettingsSetImpl implements IQuestionSettingsSet {
     }
 
     @Override
-    public Optional<QuestionSettingSet> findQuestionSettingSetById (Long qId) {
-        return  questionSettingsSetRepository.findById(qId);
-    }
+    public Optional<QuestionSettingSet> findQuestionSettingSetById(Long qId) {return  questionSettingsSetRepository.findById(qId);}
 
     @Override
-    public Optional<QuestionSettingSet> findQuestionSettingSetBySId (Long settingId) {
-        return Optional.ofNullable(questionSettingsSetRepository.findQuestionSettingSetBySId(settingId));
-    }
+    public Optional<QuestionSettingSet> findQuestionSettingSetBySId(Long settingId) {return Optional.ofNullable(questionSettingsSetRepository.findQuestionSettingSetBySId(settingId));}
 
     @Override
-    public Optional<QuestionSettingSet> findQuestionSettingSetByQIdAndSId (Long qId, Long settingId){
-        return Optional.ofNullable(questionSettingsSetRepository.findQuestionSettingSetByQIdAndSId(qId, settingId));
-    }
+    public Optional<QuestionSettingSet> findQuestionSettingSetByQIdAndSId(Long qId, Long settingId){return Optional.ofNullable(questionSettingsSetRepository.findQuestionSettingSetByQIdAndSId(qId, settingId));}
+
+    @Override
+    public Iterable<QuestionSettingSet> findAll() {return questionSettingsSetRepository.findAll();}
 }

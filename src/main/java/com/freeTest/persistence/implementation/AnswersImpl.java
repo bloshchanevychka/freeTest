@@ -10,18 +10,15 @@ import java.util.Optional;
 public class AnswersImpl implements IAnswers {
     private AnswersRepository aRepository;
 
-    public AnswersImpl(AnswersRepository aRepository) {
-        this.aRepository = aRepository;
-    }
-    @Override
-    public Optional<Answers> findAnswersById(Long id) {
-        return aRepository.findById(id);
-    }
+    public AnswersImpl(AnswersRepository aRepository) {this.aRepository = aRepository;}
 
     @Override
-    public Optional<Answers> findAnswersByAnswer(String answer) {
-        return Optional.ofNullable(aRepository.findAnswersByAnswer(answer));
-    }
+    public Optional<Answers> findAnswersById(Long id) {return aRepository.findById(id);}
 
+    @Override
+    public Optional<Answers> findAnswersByAnswer(String answer) {return Optional.ofNullable(aRepository.findAnswersByAnswer(answer));}
+
+    @Override
+    public Iterable<Answers> findAll(){return aRepository.findAll();}
 
 }

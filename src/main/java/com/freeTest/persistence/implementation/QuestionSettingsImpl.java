@@ -18,4 +18,6 @@ public class QuestionSettingsImpl implements IQuestionSettings {
     @Override
     public Optional<QuestionSettings> findQuestionSettingsByAnswAmount(Integer amount) {return Optional.ofNullable(qRepository.findQuestionSettingsByAnswAmount(amount));}
 
+    @Override
+    public Iterable<QuestionSettings> findAll() {return qRepository.findAll();}
 }

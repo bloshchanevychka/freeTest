@@ -6,5 +6,5 @@ import java.util.Optional;
 public interface IQuestionType {
     Optional<QuestionType> findQuestionTypeById (Long qId);
     Optional<QuestionType> findQuestionTypeByType (String type);
-    Optional<QuestionType> findAll();
+    Iterable<QuestionType> findAll();
 }

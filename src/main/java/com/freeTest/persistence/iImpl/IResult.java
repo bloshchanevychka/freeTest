@@ -10,5 +10,5 @@ public interface IResult {
     Optional <Result> findResultByTestId (Long testId);
     Optional <Result> findResultByUserId (Long userId);
     Optional <Result> findResultByGivenAnswer (Long answerId);
-    Optional <Result> findAll();
+    Iterable<Result> findAll();
 }

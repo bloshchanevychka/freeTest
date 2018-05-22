@@ -10,16 +10,15 @@ import java.util.Optional;
 public class QuestionLevelImpl implements IQuestionLevel {
     private QuestionLevelRepository qlRepository;
 
-    public QuestionLevelImpl(QuestionLevelRepository setRepository) {
-        this.qlRepository = qlRepository;
-    }
+    public QuestionLevelImpl(QuestionLevelRepository setRepository) {this.qlRepository = qlRepository;}
 
     @Override
-    public Optional<QuestionLevel> findQuestionLevelById(Long id) {
-        return qlRepository.findById(id);
-    }
+    public Optional<QuestionLevel> findQuestionLevelById(Long id) {return qlRepository.findById(id);}
 
     @Override
     public Optional<QuestionLevel> findQuestionLevelByQuestionLevel(String qLevel){return Optional.ofNullable(qlRepository.findQuestionLevelByQuestionLevel(qLevel));};
+
+    @Override
+    public Iterable<QuestionLevel> findAll() {return qlRepository.findAll();}
 
 }

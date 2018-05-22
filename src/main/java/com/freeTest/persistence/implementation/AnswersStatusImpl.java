@@ -11,17 +11,14 @@ import java.util.Optional;
 public class AnswersStatusImpl implements IAnswersStatus {
     private AnswersStatusRepository aSRepository;
 
-    public AnswersStatusImpl(AnswersStatusRepository aRepository) {
-        this.aSRepository = aSRepository;
-    }
+    public AnswersStatusImpl(AnswersStatusRepository aRepository) {this.aSRepository = aSRepository;}
 
     @Override
-    public Optional<AnswerStatus> findAnswerStatusById(Long id) {
-        return aSRepository.findById(id);
-    }
+    public Optional<AnswerStatus> findAnswerStatusById(Long id) {return aSRepository.findById(id);}
 
     @Override
-    public Optional<AnswerStatus> findAnswerStatusByaStatus(boolean answerSt) {
-        return Optional.ofNullable(aSRepository.findAnswerStatusByAStatus(answerSt));
-    }
+    public Optional<AnswerStatus> findAnswerStatusByaStatus(boolean answerSt) {return Optional.ofNullable(aSRepository.findAnswerStatusByAStatus(answerSt));}
+
+    @Override
+    public Iterable<AnswerStatus> findAll(){return aSRepository.findAll();}
 }

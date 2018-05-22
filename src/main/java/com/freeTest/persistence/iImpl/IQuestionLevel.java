@@ -6,5 +6,5 @@ import java.util.Optional;
 public interface IQuestionLevel {
     Optional<QuestionLevel> findQuestionLevelById(Long id);
     Optional<QuestionLevel> findQuestionLevelByQuestionLevel(String qLevel);
-    Optional<QuestionLevel> findAll();
+    Iterable<QuestionLevel> findAll();
 }

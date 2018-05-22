@@ -10,5 +10,5 @@ public interface IUsers  {
     Optional<Users> findUsersByULogin(String login);
     Optional<Users> findUsersByEmail(String email);
     Optional<Users> findUsersByUStatus(Long status);
-    Optional<Users> findAll();
+    Iterable<Users> findAll();
 }

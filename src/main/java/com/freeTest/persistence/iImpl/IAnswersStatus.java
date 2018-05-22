@@ -7,5 +7,5 @@ import java.util.Optional;
 public interface IAnswersStatus {
     Optional<AnswerStatus> findAnswerStatusById(Long id);
     Optional<AnswerStatus> findAnswerStatusByaStatus(boolean answerSt);
-    Optional<AnswerStatus> findAll();
+    Iterable<AnswerStatus> findAll();
 }

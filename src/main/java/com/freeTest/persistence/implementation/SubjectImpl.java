@@ -10,14 +10,14 @@ import java.util.Optional;
 public class SubjectImpl implements ISubject {
     private SubjectRepository subjectRepository;
 
-    public SubjectImpl(SubjectRepository subjectRepository) {
-        this.subjectRepository = subjectRepository;
-    }
+    public SubjectImpl(SubjectRepository subjectRepository) {this.subjectRepository = subjectRepository;}
 
     @Override
-    public  Optional<Subject> findSubjectById (Long sId) {return subjectRepository.findById(sId);}
+    public  Optional<Subject> findSubjectById(Long sId) {return subjectRepository.findById(sId);}
 
     @Override
-    public Optional<Subject> findSubjectBySubject (String subject) {return Optional.ofNullable(subjectRepository.findSubjectBySubject(subject)); }
+    public Optional<Subject> findSubjectBySubject(String subject) {return Optional.ofNullable(subjectRepository.findSubjectBySubject(subject)); }
 
+    @Override
+    public Iterable<Subject> findAll() {return subjectRepository.findAll();}
 }

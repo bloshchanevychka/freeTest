@@ -13,9 +13,12 @@ public class StatusTableImpl implements IStatusTable {
     public StatusTableImpl(StatusTableRepository statusTableRepository) {this.statusTableRepository = statusTableRepository;}
 
     @Override
-    public Optional<StatusTable> findStatusTableById (Long sId) {return statusTableRepository.findById(sId);}
+    public Optional<StatusTable> findStatusTableById(Long sId) {return statusTableRepository.findById(sId);}
 
     @Override
-    public Optional<StatusTable> findStatusTableByStatus (Integer status) {return Optional.ofNullable(statusTableRepository.findStatusTableByStatus(status));}
+    public Optional<StatusTable> findStatusTableByStatus(Integer status) {return Optional.ofNullable(statusTableRepository.findStatusTableByStatus(status));}
+
+    @Override
+    public Iterable<StatusTable> findAll() {return statusTableRepository.findAll();}
 
 }

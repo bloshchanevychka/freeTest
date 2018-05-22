@@ -8,5 +8,5 @@ public interface ITestSettings {
     Optional<TestSettings> findTestSettingsByTimeSettings (Long time);
     Optional<TestSettings> findTestSettingsBySecuritySettings (Boolean security);
     Optional<TestSettings> findTestSettingsByShowAnsw (Boolean answShow);
-    Optional<TestSettings> findAll();
+    Iterable<TestSettings> findAll();
 }

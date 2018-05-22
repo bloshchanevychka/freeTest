@@ -8,7 +8,7 @@ public interface IQuestions {
     Optional<Questions> findQuestionsByQuestionType(Long type);
     Optional<Questions> findQuestionsByQuestionLevel(Long level);
     Optional<Questions> findQuestionsByQuestionText(String text);
-    Optional<Questions> findAll();
+    Iterable<Questions> findAll();
 
 
 }

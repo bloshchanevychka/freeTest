@@ -15,11 +15,14 @@ public class TestSetsImpl implements ITestSets {
     }
 
     @Override
-    public Optional<TestSets> findTestSetsByid (Long tsId) {return testSetsRepository.findById(tsId);}
+    public Optional<TestSets> findTestSetsByid(Long tsId) {return testSetsRepository.findById(tsId);}
 
     @Override
-    public Optional<TestSets> findTestSetsByQuestionId (Long question) {return Optional.ofNullable(testSetsRepository.findTestSetsByQuestionId(question));}
+    public Optional<TestSets> findTestSetsByQuestionId(Long question) {return Optional.ofNullable(testSetsRepository.findTestSetsByQuestionId(question));}
 
     @Override
-    public Optional<TestSets> findTestSetsByTestId (Long test) {return Optional.ofNullable(testSetsRepository.findTestSetsByTestId(test));}
+    public Optional<TestSets> findTestSetsByTestId(Long test) {return Optional.ofNullable(testSetsRepository.findTestSetsByTestId(test));}
+
+    @Override
+    public Iterable<TestSets> findAll() {return testSetsRepository.findAll();}
 }

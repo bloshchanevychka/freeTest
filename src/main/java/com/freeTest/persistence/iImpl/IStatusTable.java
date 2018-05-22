@@ -6,5 +6,5 @@ import java.util.Optional;
 public interface IStatusTable {
     Optional<StatusTable> findStatusTableById (Long sId);
     Optional<StatusTable> findStatusTableByStatus (Integer status);
-    Optional<StatusTable> findAll();
+    Iterable<StatusTable> findAll();
 }

@@ -15,11 +15,14 @@ public class TestImpl implements ITest {
     }
 
     @Override
-    public Optional<Test> findTestById (Long tId) {return testRepository.findById(tId);}
+    public Optional<Test> findTestById(Long tId) {return testRepository.findById(tId);}
 
     @Override
-    public Optional<Test> findTestByTestName (String testName) {return Optional.ofNullable(testRepository.findTestByTestName(testName));}
+    public Optional<Test> findTestByTestName(String testName) {return Optional.ofNullable(testRepository.findTestByTestName(testName));}
 
     @Override
-    public Optional<Test> findTestByTestSubj (Long subj) {return Optional.ofNullable(testRepository.findTestByTestSubj(subj));}
+    public Optional<Test> findTestByTestSubj(Long subj) {return Optional.ofNullable(testRepository.findTestByTestSubj(subj));}
+
+    @Override
+    public Iterable<Test> findAll() {return testRepository.findAll();}
 }
