@@ -7,4 +7,5 @@ public interface ITestSets {
     Optional<TestSets> findTestSetsByid (Long tsId);
     Optional<TestSets> findTestSetsByQuestionId (Long question);
     Optional<TestSets> findTestSetsByTestId (Long test);
+    Optional<TestSets> findAll();
 }

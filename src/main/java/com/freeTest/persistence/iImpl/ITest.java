@@ -7,4 +7,5 @@ public interface ITest {
     Optional<Test> findTestById (Long tId);
     Optional<Test> findTestByTestName (String testName);
     Optional<Test> findTestByTestSubj (Long subj);
+    Optional<Test> findAll();
 }

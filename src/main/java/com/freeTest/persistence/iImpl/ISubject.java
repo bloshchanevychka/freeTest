@@ -6,4 +6,5 @@ import java.util.Optional;
 public interface ISubject {
     Optional<Subject> findSubjectById (Long sId);
     Optional<Subject> findSubjectBySubject (String subject);
+    Optional<Subject> findAll();
 }

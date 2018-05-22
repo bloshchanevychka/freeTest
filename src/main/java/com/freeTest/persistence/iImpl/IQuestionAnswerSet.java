@@ -8,4 +8,5 @@ public interface IQuestionAnswerSet {
     Optional<QuestionAnswerSet>  findQuestionAnswerSetByQuestion(Long qId);
     Optional<QuestionAnswerSet> findQuestionAnswerSetByAnswer(Long aId);
     Optional<QuestionAnswerSet> findQuestionAnswerSetByStatus(Long sId);
+    Optional<QuestionAnswerSet> findAll();
 }

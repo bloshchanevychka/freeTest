@@ -7,4 +7,5 @@ public interface ITestSettingsSet {
     Optional<TestSettingsSet> findTestSettingsSetById (Long tssId);
     Optional<TestSettingsSet> findTestSettingsSetByTest (Long test);
     Optional<TestSettingsSet> findTestSettingsSetBySettingSet (Long setting);
+    Optional<TestSettingsSet> findAll();
 }

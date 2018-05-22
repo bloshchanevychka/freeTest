@@ -7,4 +7,5 @@ public interface IQuestionSettingsSet {
     Optional<QuestionSettingSet> findQuestionSettingSetById (Long qId);
     Optional<QuestionSettingSet> findQuestionSettingSetBySId (Long settingId);
     Optional<QuestionSettingSet> findQuestionSettingSetByQIdAndSId (Long qId, Long settingId);
+    Optional<QuestionSettingSet> findAll();
 }
