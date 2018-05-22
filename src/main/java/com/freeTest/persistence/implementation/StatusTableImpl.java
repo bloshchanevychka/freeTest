@@ -3,8 +3,10 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.StatusTable;
 import com.freeTest.persistence.iImpl.IStatusTable;
 import com.freeTest.persistence.repository.StatusTableRepository;
-import java.util.Optional;
+import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+@Repository
 public class StatusTableImpl implements IStatusTable {
     private StatusTableRepository statusTableRepository;
 

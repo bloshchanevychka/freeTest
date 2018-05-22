@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -12,11 +13,13 @@ public class QuestionLevel implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long questionLevelId;
-    private String questionLevel;
+    private String level;
+    @OneToMany(mappedBy = "questionLevel")
+    private List<QuestionLevel> questionLevel;
 
     //protected QuestionLevel () {}
 
     public QuestionLevel(String level) {
-        this.questionLevel = level;
+        this.level = level;
     }
 }

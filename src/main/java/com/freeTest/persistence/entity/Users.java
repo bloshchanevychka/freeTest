@@ -1,9 +1,6 @@
 package com.freeTest.persistence.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -15,15 +12,21 @@ public class Users implements Serializable {
     private String uFullName;
     private String uEmail;
     private String uPassword;
-    private Long uStatus;
+    //private Long uStatus;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "uStatus")
+    private StatusTable uStatus;
+
 
     //protected Users() {}
 
-    public Users(String uLogin, String uFullName, String uEmail, String uPassword, Long uStatus) {
+    public Users(Long uId, String uLogin, String uFullName, String uEmail, String uPassword, StatusTable status) {
+        this.uId = uId;
         this.uLogin = uLogin;
         this.uFullName = uFullName;
         this.uEmail = uEmail;
         this.uPassword = uPassword;
-        this.uStatus = uStatus;
+       // this.uStatus = uStatus; , Long uStatus
+        this.uStatus = status;
     }
 }

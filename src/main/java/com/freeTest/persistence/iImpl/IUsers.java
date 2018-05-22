@@ -9,5 +9,5 @@ public interface IUsers  {
     Optional<Users> findUsersByUEmailAndUPassword(String email, String password);
     Optional<Users> findUsersByULogin(String login);
     Optional<Users> findUsersByEmail(String email);
-    Optional<Users> findUsersByUStatus(String status);
+    Optional<Users> findUsersByUStatus(Long status);
 }

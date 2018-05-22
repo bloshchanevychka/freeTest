@@ -3,9 +3,10 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.QuestionLevel;
 import com.freeTest.persistence.iImpl.IQuestionLevel;
 import com.freeTest.persistence.repository.QuestionLevelRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
-
+@Repository
 public class QuestionLevelImpl implements IQuestionLevel {
     private QuestionLevelRepository qlRepository;
 

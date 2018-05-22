@@ -3,9 +3,10 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.QuestionSettingSet;
 import com.freeTest.persistence.iImpl.IQuestionSettingsSet;
 import com.freeTest.persistence.repository.QuestionSettingsSetRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
-
+@Repository
 public class QuestionSettingsSetImpl implements IQuestionSettingsSet {
     private QuestionSettingsSetRepository questionSettingsSetRepository;
 

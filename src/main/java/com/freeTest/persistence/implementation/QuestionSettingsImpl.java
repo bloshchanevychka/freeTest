@@ -3,8 +3,10 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.QuestionSettings;
 import com.freeTest.persistence.iImpl.IQuestionSettings;
 import com.freeTest.persistence.repository.QuestionSettingsRepository;
-import java.util.Optional;
+import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+@Repository
 public class QuestionSettingsImpl implements IQuestionSettings {
     private QuestionSettingsRepository qRepository;
 

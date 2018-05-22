@@ -3,8 +3,10 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Users;
 import com.freeTest.persistence.iImpl.IUsers;
 import com.freeTest.persistence.repository.UsersRepository;
-import java.util.Optional;
+import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+@Repository
 public class UsersImpl implements IUsers {
 
     private UsersRepository usersRepository;
@@ -27,6 +29,6 @@ public class UsersImpl implements IUsers {
     public Optional<Users> findUsersByEmail(String email) {  return Optional.ofNullable(usersRepository.findUsersByUEmail(email));    }
 
     @Override
-    public Optional<Users> findUsersByUStatus(String status) {  return Optional.ofNullable(usersRepository.findUsersByUStatus(status));
+    public Optional<Users> findUsersByUStatus(Long status) {  return Optional.ofNullable(usersRepository.findUsersByUStatus(status));
     }
 }

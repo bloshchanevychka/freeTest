@@ -4,8 +4,10 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.QuestionAnswerSet;
 import com.freeTest.persistence.iImpl.IQuestionAnswerSet;
 import com.freeTest.persistence.repository.QuestionAnswerSetRepository;
-import java.util.Optional;
+import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+@Repository
 public class QuestionAnswerSetImpl implements IQuestionAnswerSet {
 
     private QuestionAnswerSetRepository setRepository;

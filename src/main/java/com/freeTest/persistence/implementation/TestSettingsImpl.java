@@ -3,8 +3,10 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.TestSettings;
 import com.freeTest.persistence.iImpl.ITestSettings;
 import com.freeTest.persistence.repository.TestSettingsRepository;
-import java.util.Optional;
+import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+@Repository
 public class TestSettingsImpl implements ITestSettings {
     private TestSettingsRepository testSettingsRepository;
 

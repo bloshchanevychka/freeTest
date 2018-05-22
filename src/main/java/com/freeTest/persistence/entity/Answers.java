@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -13,7 +14,8 @@ public class Answers implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long aId;
     private String answer;
-    private Long status;
+    @OneToMany(mappedBy = "answer")
+    private List<QuestionAnswerSet> questionAnswerSets;
 
    // protected Answers () {}
 

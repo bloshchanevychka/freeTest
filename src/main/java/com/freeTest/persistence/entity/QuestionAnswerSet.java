@@ -13,13 +13,19 @@ public class QuestionAnswerSet implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long setId;
-    private Long question;
-    private Long answer;
-    private Long status;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "question")
+    private Questions question;
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "answer")
+    private Answers answer;
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "status")
+    private AnswerStatus status;
 
    // protected QuestionAnswerSet () {}
 
-    public QuestionAnswerSet(Long question, Long answer, Long status) {
+    public QuestionAnswerSet(Questions question, Answers answer, AnswerStatus status) {
         this.question = question;
         this.answer = answer;
         this.status = status;

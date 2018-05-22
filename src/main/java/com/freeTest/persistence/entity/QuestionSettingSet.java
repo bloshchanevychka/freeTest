@@ -12,12 +12,16 @@ public class QuestionSettingSet implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long qSettingsSetId;
-    private Long qId;
-    private Long sId;
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "qId")
+    private Questions qId;
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "sId")
+    private QuestionSettings sId;
 
    // protected QuestionSettingSet() {}
 
-    public QuestionSettingSet(Long qId, Long sId) {
+    public QuestionSettingSet(Questions qId, QuestionSettings sId) {
         this.qId = qId;
         this.sId = sId;
     }

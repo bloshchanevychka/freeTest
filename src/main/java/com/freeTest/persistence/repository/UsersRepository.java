@@ -10,7 +10,7 @@ public interface UsersRepository extends CrudRepository<Users, Long> {
     Users findUsersByUEmailAndUPassword(String email, String password);
     Users findUsersByULogin(String login);
     Users findUsersByUEmail(String email);
-    Users findUsersByUStatus(String status);
+    Users findUsersByUStatus(Long status);
 
 
 }

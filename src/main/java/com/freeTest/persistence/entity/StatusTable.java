@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -13,6 +14,8 @@ public class StatusTable implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long statusId;
     private Integer status;
+    @OneToMany(mappedBy = "uStatus")
+    private List <Users> users;
 
    // protected StatusTable () {}
 

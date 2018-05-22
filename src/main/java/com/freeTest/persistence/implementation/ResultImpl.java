@@ -3,9 +3,11 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Result;
 import com.freeTest.persistence.iImpl.IResult;
 import com.freeTest.persistence.repository.ResultRepository;
+import org.springframework.stereotype.Repository;
+
 import java.util.Date;
 import java.util.Optional;
-
+@Repository
 public class ResultImpl implements IResult {
     private ResultRepository resultRepository;
 

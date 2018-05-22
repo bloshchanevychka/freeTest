@@ -4,8 +4,10 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.AnswerStatus;
 import com.freeTest.persistence.iImpl.IAnswersStatus;
 import com.freeTest.persistence.repository.AnswersStatusRepository;
-import java.util.Optional;
+import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+@Repository
 public class AnswersStatusImpl implements IAnswersStatus {
     private AnswersStatusRepository aSRepository;
 

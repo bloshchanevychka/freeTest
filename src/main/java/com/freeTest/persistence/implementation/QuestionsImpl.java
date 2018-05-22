@@ -3,14 +3,16 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Questions;
 import com.freeTest.persistence.iImpl.IQuestions;
 import com.freeTest.persistence.repository.QuestionsRepository;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Repository;
+
 import java.util.Optional;
 
+@Repository
+@AllArgsConstructor
 public class QuestionsImpl implements IQuestions {
-    private QuestionsRepository qRepository;
 
-    public QuestionsImpl(QuestionsRepository qRepository) {
-        this.qRepository = qRepository;
-    }
+    private QuestionsRepository qRepository;
 
     @Override
     public Optional<Questions> findQuestionsById(Long questionId) {
