@@ -1,11 +1,10 @@
 package com.freeTest.persistence.entity;
-import lombok.Data;
+
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-@Data
 @NoArgsConstructor
 @Entity
 public class QuestionSettings implements Serializable {
@@ -15,11 +14,8 @@ public class QuestionSettings implements Serializable {
     private Integer answAmount;
     private String help;
     private String picture;
-
     @OneToMany(mappedBy = "sId")
     private List<QuestionSettingSet> questionSettingSetsSets;
-
-    //protected QuestionSettings () {}
 
     public QuestionSettings(Integer answAmount, String help, String picture) {
         if (answAmount < 1 || answAmount > 10)
@@ -30,5 +26,25 @@ public class QuestionSettings implements Serializable {
             this.picture = picture;
         }
     }
+
+    public Long getSetttingId() {return setttingId;}
+
+    public void setSetttingId(Long setttingId) {this.setttingId = setttingId;}
+
+    public Integer getAnswAmount() {return answAmount;}
+
+    public void setAnswAmount(Integer answAmount) {this.answAmount = answAmount;}
+
+    public String getHelp() {return help;}
+
+    public void setHelp(String help) {this.help = help;}
+
+    public String getPicture() {return picture;}
+
+    public void setPicture(String picture) {this.picture = picture;}
+
+    public List<QuestionSettingSet> getQuestionSettingSetsSets() {return questionSettingSetsSets;}
+
+    public void setQuestionSettingSetsSets(List<QuestionSettingSet> questionSettingSetsSets) {this.questionSettingSetsSets = questionSettingSetsSets;}
 }
 

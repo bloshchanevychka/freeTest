@@ -1,12 +1,9 @@
 package com.freeTest.persistence.entity;
 
-import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Data
 @NoArgsConstructor
 @Entity
 public class QuestionAnswerSet implements Serializable {
@@ -23,11 +20,25 @@ public class QuestionAnswerSet implements Serializable {
     @JoinColumn(name = "status")
     private AnswerStatus status;
 
-   // protected QuestionAnswerSet () {}
-
     public QuestionAnswerSet(Questions question, Answers answer, AnswerStatus status) {
         this.question = question;
         this.answer = answer;
         this.status = status;
     }
+
+    public Long getSetId() {return setId;}
+
+    public void setSetId(Long setId) {this.setId = setId;}
+
+    public Questions getQuestion() {return question;}
+
+    public void setQuestion(Questions question) {this.question = question;}
+
+    public Answers getAnswer() {return answer;}
+
+    public void setAnswer(Answers answer) {this.answer = answer;}
+
+    public AnswerStatus getStatus() {return status;}
+
+    public void setStatus(AnswerStatus status) {this.status = status;}
 }

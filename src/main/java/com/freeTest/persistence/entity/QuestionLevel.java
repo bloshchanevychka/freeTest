@@ -1,25 +1,33 @@
 package com.freeTest.persistence.entity;
 
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-@Data
 @NoArgsConstructor
 @Entity
 public class QuestionLevel implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long questionLevelId;
-    private String level;
-    @OneToMany(mappedBy = "questionLevel")
-    private List<QuestionLevel> questionLevel;
-
-    //protected QuestionLevel () {}
+    private String questionLevel;
+    @OneToMany(mappedBy = "qLevel")
+    private List<Questions> questions;
 
     public QuestionLevel(String level) {
-        this.level = level;
+        this.questionLevel = level;
     }
+
+    public Long getQuestionLevelId() {return questionLevelId;}
+
+    public void setQuestionLevelId(Long questionLevelId) {this.questionLevelId = questionLevelId;}
+
+    public String getQuestionLevel() {return questionLevel;}
+
+    public void setQuestionLevel(String questionLevel) {this.questionLevel = questionLevel;}
+
+    public List<Questions> getQuestions() {return questions;}
+
+    public void setQuestions(List<Questions> questions) {this.questions = questions;}
 }

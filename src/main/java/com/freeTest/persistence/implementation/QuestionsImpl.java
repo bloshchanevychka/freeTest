@@ -21,7 +21,7 @@ public class QuestionsImpl implements IQuestions {
     public Optional<Questions> findQuestionsByQuestionType(Long type) {return Optional.ofNullable(qRepository.findQuestionsByQuestionType(type));}
 
     @Override
-    public Optional<Questions> findQuestionsByQuestionLevel(Long level){return Optional.ofNullable(qRepository.findQuestionsByQuestionLevel(level));}
+    public Optional<Questions> findQuestionsByQLevel(Long level){return Optional.ofNullable(qRepository.findQuestionsByQLevel(level));}
 
     @Override
     public Optional<Questions> findQuestionsByQuestionText(String text) {return Optional.ofNullable(qRepository.findQuestionsByQuestionText(text));}

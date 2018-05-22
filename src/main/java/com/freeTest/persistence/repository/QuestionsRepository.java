@@ -5,6 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface QuestionsRepository extends CrudRepository <Questions, Long> {
     Questions findQuestionsByQuestionType (Long type);
-    Questions findQuestionsByQuestionLevel (Long level);
+    Questions findQuestionsByQLevel (Long level);
     Questions findQuestionsByQuestionText (String text);
 }

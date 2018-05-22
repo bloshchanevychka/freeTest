@@ -1,28 +1,32 @@
 package com.freeTest.persistence.entity;
 
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-@Data
 @NoArgsConstructor
 @Entity
 public class Result implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long resId;
-    private Long testId;
-    private Long userId;
-    private Long questionId;
-    private Long givenAnswer;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "testId")
+    private Test testId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "userId")
+    private Users userId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "questionId")
+    private Questions questionId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "givenAnswer")
+    private Answers givenAnswer;
     private Date testDate;
     private Long testTime;
 
-    //protected Result (){}
-
-    public Result(Long testId, Long userId, Long questionId, Long givenAnswer, Date testDaate, Long testTime) {
+    public Result(Test testId, Users userId, Questions questionId, Answers givenAnswer, Date testDaate, Long testTime) {
         this.testId = testId;
         this.userId = userId;
         this.questionId = questionId;
@@ -30,4 +34,32 @@ public class Result implements Serializable {
         this.testDate = testDaate;
         this.testTime = testTime;
     }
+
+    public Long getResId() {return resId;}
+
+    public void setResId(Long resId) {this.resId = resId;}
+
+    public Test getTestId() {return testId;}
+
+    public void setTestId(Test testId) {this.testId = testId;}
+
+    public Users getUserId() {return userId;}
+
+    public void setUserId(Users userId) {this.userId = userId;}
+
+    public Questions getQuestionId() {return questionId;}
+
+    public void setQuestionId(Questions questionId) {this.questionId = questionId;}
+
+    public Answers getGivenAnswer() {return givenAnswer;}
+
+    public void setGivenAnswer(Answers givenAnswer) {this.givenAnswer = givenAnswer;}
+
+    public Date getTestDate() {return testDate;}
+
+    public void setTestDate(Date testDate) {this.testDate = testDate;}
+
+    public Long getTestTime() {return testTime;}
+
+    public void setTestTime(Long testTime) {this.testTime = testTime;}
 }

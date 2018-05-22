@@ -1,11 +1,9 @@
 package com.freeTest.persistence.entity;
 
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Data
 @NoArgsConstructor
 @Entity
 public class QuestionSettingSet implements Serializable {
@@ -19,10 +17,20 @@ public class QuestionSettingSet implements Serializable {
     @JoinColumn(name = "sId")
     private QuestionSettings sId;
 
-   // protected QuestionSettingSet() {}
-
     public QuestionSettingSet(Questions qId, QuestionSettings sId) {
         this.qId = qId;
         this.sId = sId;
     }
+
+    public Long getqSettingsSetId() {return qSettingsSetId;}
+
+    public void setqSettingsSetId(Long qSettingsSetId) {this.qSettingsSetId = qSettingsSetId;}
+
+    public Questions getqId() {return qId;}
+
+    public void setqId(Questions qId) {this.qId = qId;}
+
+    public QuestionSettings getsId() {return sId;}
+
+    public void setsId(QuestionSettings sId) {this.sId = sId;}
 }

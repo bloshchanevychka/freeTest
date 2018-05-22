@@ -1,10 +1,10 @@
 package com.freeTest.persistence.entity;
-import lombok.Data;
+
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
-@Data
 @NoArgsConstructor
 @Entity
 public class Subject implements Serializable {
@@ -12,10 +12,20 @@ public class Subject implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long subjId;
     private String subject;
+    @OneToMany(mappedBy = "testSubj")
+    private List<Test> tests;
 
-   // protected Subject () {}
+    public Subject(String subject) {this.subject = subject;}
 
-    public Subject(String subject) {
-        this.subject = subject;
-    }
+    public Long getSubjId() {return subjId;}
+
+    public void setSubjId(Long subjId) {this.subjId = subjId;}
+
+    public String getSubject() {return subject;}
+
+    public void setSubject(String subject) {this.subject = subject;}
+
+    public List<Test> getTests() {return tests;}
+
+    public void setTests(List<Test> tests) {this.tests = tests;}
 }

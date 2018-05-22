@@ -1,23 +1,37 @@
 package com.freeTest.persistence.entity;
-import lombok.Data;
+
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Data
+
 @NoArgsConstructor
 @Entity
 public class TestSets implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long testSetId;
-    private Long testId;
-    private Long questionId;
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "testId")
+    private Test testId;
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "questionId")
+    private Questions questionId;
 
-    //protected TestSets () {}
-
-    public TestSets(Long testId, Long questionId) {
+    public TestSets(Test testId, Questions questionId) {
         this.testId = testId;
         this.questionId = questionId;
     }
+
+    public Long getTestSetId() {return testSetId;}
+
+    public void setTestSetId(Long testSetId) {this.testSetId = testSetId;}
+
+    public Test getTestId() {return testId;}
+
+    public void setTestId(Test testId) {this.testId = testId;}
+
+    public Questions getQuestionId() {return questionId;}
+
+    public void setQuestionId(Questions questionId) {this.questionId = questionId;}
 }

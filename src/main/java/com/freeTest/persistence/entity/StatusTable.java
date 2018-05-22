@@ -1,12 +1,10 @@
 package com.freeTest.persistence.entity;
 
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-@Data
 @NoArgsConstructor
 @Entity
 public class StatusTable implements Serializable {
@@ -17,11 +15,21 @@ public class StatusTable implements Serializable {
     @OneToMany(mappedBy = "uStatus")
     private List <Users> users;
 
-   // protected StatusTable () {}
-
     public StatusTable (Integer status) {
         this.status = status;
     }
+
+    public Long getStatusId() {return statusId;}
+
+    public void setStatusId(Long statusId) {this.statusId = statusId;}
+
+    public Integer getStatus() {return status;}
+
+    public void setStatus(Integer status) {this.status = status;}
+
+    public List<Users> getUsers() {return users;}
+
+    public void setUsers(List<Users> users) {this.users = users;}
 
     @Override
     public String toString() {
