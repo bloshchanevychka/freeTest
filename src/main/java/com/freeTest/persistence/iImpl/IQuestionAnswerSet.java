@@ -9,4 +9,5 @@ public interface IQuestionAnswerSet {
     Optional<QuestionAnswerSet> findQuestionAnswerSetByAnswer(Long aId);
     Optional<QuestionAnswerSet> findQuestionAnswerSetByStatus(Long sId);
     Iterable<QuestionAnswerSet> findAll();
+    QuestionAnswerSet save(QuestionAnswerSet questionAnswerSet);
 }

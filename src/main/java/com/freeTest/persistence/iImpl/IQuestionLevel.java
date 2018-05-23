@@ -7,4 +7,5 @@ public interface IQuestionLevel {
     Optional<QuestionLevel> findQuestionLevelById(Long id);
     Optional<QuestionLevel> findQuestionLevelByQuestionLevel(String qLevel);
     Iterable<QuestionLevel> findAll();
+    QuestionLevel save(QuestionLevel questionLevel);
 }

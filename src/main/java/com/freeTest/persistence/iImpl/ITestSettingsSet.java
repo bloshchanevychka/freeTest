@@ -8,4 +8,5 @@ public interface ITestSettingsSet {
     Optional<TestSettingsSet> findTestSettingsSetByTest (Long test);
     Optional<TestSettingsSet> findTestSettingsSetBySettingSet (Long setting);
     Iterable<TestSettingsSet> findAll();
+    TestSettingsSet save(TestSettingsSet testSettingsSet);
 }

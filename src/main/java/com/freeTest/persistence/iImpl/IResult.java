@@ -11,4 +11,5 @@ public interface IResult {
     Optional <Result> findResultByUserId (Long userId);
     Optional <Result> findResultByGivenAnswer (Long answerId);
     Iterable<Result> findAll();
+    Result save(Result result);
 }

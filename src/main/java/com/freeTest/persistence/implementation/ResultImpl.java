@@ -3,15 +3,15 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Result;
 import com.freeTest.persistence.iImpl.IResult;
 import com.freeTest.persistence.repository.ResultRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 import java.util.Optional;
 @Repository
+@AllArgsConstructor
 public class ResultImpl implements IResult {
     private ResultRepository resultRepository;
-
-    public ResultImpl(ResultRepository resultRepository) {this.resultRepository = resultRepository;}
 
     @Override
     public Optional<Result> findResultById(Long rId) {return resultRepository.findById(rId);}
@@ -30,4 +30,7 @@ public class ResultImpl implements IResult {
 
     @Override
     public Iterable<Result> findAll() {return resultRepository.findAll();}
+
+    @Override
+    public Result save(Result result) {return resultRepository.save(result);}
 }

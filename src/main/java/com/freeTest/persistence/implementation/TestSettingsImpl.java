@@ -3,16 +3,14 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.TestSettings;
 import com.freeTest.persistence.iImpl.ITestSettings;
 import com.freeTest.persistence.repository.TestSettingsRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 @Repository
+@AllArgsConstructor
 public class TestSettingsImpl implements ITestSettings {
     private TestSettingsRepository testSettingsRepository;
-
-    public TestSettingsImpl(TestSettingsRepository testSettingsRepository) {
-        this.testSettingsRepository = testSettingsRepository;
-    }
 
     @Override
     public Optional<TestSettings> findTestSettingsById(Long tSetId) {return testSettingsRepository.findById(tSetId);}
@@ -28,4 +26,7 @@ public class TestSettingsImpl implements ITestSettings {
 
     @Override
     public Iterable<TestSettings> findAll() {return testSettingsRepository.findAll();}
+
+    @Override
+    public TestSettings save(TestSettings testSettings){return testSettingsRepository.save(testSettings);}
 }

@@ -3,16 +3,14 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Test;
 import com.freeTest.persistence.iImpl.ITest;
 import com.freeTest.persistence.repository.TestRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 @Repository
+@AllArgsConstructor
 public class TestImpl implements ITest {
     private TestRepository testRepository;
-
-    public TestImpl(TestRepository testRepository) {
-        this.testRepository = testRepository;
-    }
 
     @Override
     public Optional<Test> findTestById(Long tId) {return testRepository.findById(tId);}
@@ -25,4 +23,7 @@ public class TestImpl implements ITest {
 
     @Override
     public Iterable<Test> findAll() {return testRepository.findAll();}
+
+    @Override
+    public Test save(Test test) {return testRepository.save(test);}
 }

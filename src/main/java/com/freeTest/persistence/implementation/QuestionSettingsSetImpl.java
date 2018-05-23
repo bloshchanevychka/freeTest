@@ -3,16 +3,14 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.QuestionSettingSet;
 import com.freeTest.persistence.iImpl.IQuestionSettingsSet;
 import com.freeTest.persistence.repository.QuestionSettingsSetRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 @Repository
+@AllArgsConstructor
 public class QuestionSettingsSetImpl implements IQuestionSettingsSet {
     private QuestionSettingsSetRepository questionSettingsSetRepository;
-
-    public QuestionSettingsSetImpl(QuestionSettingsSetRepository questionSettingsSetRepository) {
-        this.questionSettingsSetRepository = questionSettingsSetRepository;
-    }
 
     @Override
     public Optional<QuestionSettingSet> findQuestionSettingSetById(Long qId) {return  questionSettingsSetRepository.findById(qId);}
@@ -25,4 +23,7 @@ public class QuestionSettingsSetImpl implements IQuestionSettingsSet {
 
     @Override
     public Iterable<QuestionSettingSet> findAll() {return questionSettingsSetRepository.findAll();}
+
+    @Override
+    public QuestionSettingSet save(QuestionSettingSet questionSettingSet){return questionSettingsSetRepository.save(questionSettingSet);}
 }

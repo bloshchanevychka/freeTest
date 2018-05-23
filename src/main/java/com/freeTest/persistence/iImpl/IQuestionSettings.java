@@ -7,4 +7,5 @@ public interface IQuestionSettings {
     Optional <QuestionSettings> findQuestionSettingsById(Long qsId);
     Optional<QuestionSettings> findQuestionSettingsByAnswAmount(Integer amount);
     Iterable<QuestionSettings> findAll();
+    QuestionSettings save(QuestionSettings questionSettings);
 }

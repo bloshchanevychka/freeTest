@@ -8,4 +8,5 @@ public interface IAnswersStatus {
     Optional<AnswerStatus> findAnswerStatusById(Long id);
     Optional<AnswerStatus> findAnswerStatusByaStatus(boolean answerSt);
     Iterable<AnswerStatus> findAll();
+    AnswerStatus save(AnswerStatus answerStatus);
 }

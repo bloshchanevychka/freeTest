@@ -8,5 +8,6 @@ public interface IAnswers {
     Optional<Answers> findAnswersById(Long id);
     Optional<Answers> findAnswersByAnswer(String answer);
     Iterable<Answers> findAll();
+    Answers save(Answers answers);
 
 }

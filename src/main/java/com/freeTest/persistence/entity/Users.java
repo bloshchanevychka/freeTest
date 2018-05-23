@@ -22,7 +22,7 @@ public class Users implements Serializable {
     @OneToMany(mappedBy = "userId")
     private List<Result> results;
 
-       public Users(Long uId, String uLogin, String uFullName, String uEmail, String uPassword, StatusTable status) {
+    public Users(Long uId, String uLogin, String uFullName, String uEmail, String uPassword, StatusTable status) {
         this.uId = uId;
         this.uLogin = uLogin;
         this.uFullName = uFullName;

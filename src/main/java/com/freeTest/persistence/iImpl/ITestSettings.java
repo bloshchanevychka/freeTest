@@ -9,4 +9,5 @@ public interface ITestSettings {
     Optional<TestSettings> findTestSettingsBySecuritySettings (Boolean security);
     Optional<TestSettings> findTestSettingsByShowAnsw (Boolean answShow);
     Iterable<TestSettings> findAll();
+    TestSettings save(TestSettings testSettings);
 }

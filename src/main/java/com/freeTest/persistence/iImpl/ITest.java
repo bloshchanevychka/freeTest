@@ -8,4 +8,5 @@ public interface ITest {
     Optional<Test> findTestByTestName (String testName);
     Optional<Test> findTestByTestSubj (Long subj);
     Iterable<Test> findAll();
+    Test save(Test test);
 }

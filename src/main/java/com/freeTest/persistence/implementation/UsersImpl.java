@@ -3,10 +3,12 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Users;
 import com.freeTest.persistence.iImpl.IUsers;
 import com.freeTest.persistence.repository.UsersRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 @Repository
+@AllArgsConstructor
 public class UsersImpl implements IUsers {
 
     private UsersRepository usersRepository;
@@ -33,4 +35,7 @@ public class UsersImpl implements IUsers {
 
     @Override
     public Iterable<Users> findAll() {return usersRepository.findAll();}
+
+    @Override
+    public Users save(Users users) {return usersRepository.save(users);}
 }

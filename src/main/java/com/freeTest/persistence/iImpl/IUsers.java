@@ -11,4 +11,5 @@ public interface IUsers  {
     Optional<Users> findUsersByEmail(String email);
     Optional<Users> findUsersByUStatus(Long status);
     Iterable<Users> findAll();
+    Users save(Users users);
 }

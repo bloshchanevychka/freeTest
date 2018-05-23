@@ -8,4 +8,5 @@ public interface ITestSets {
     Optional<TestSets> findTestSetsByQuestionId (Long question);
     Optional<TestSets> findTestSetsByTestId (Long test);
     Iterable<TestSets> findAll();
+    TestSets save(TestSets testSets);
 }

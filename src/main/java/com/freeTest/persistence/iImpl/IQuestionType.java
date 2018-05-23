@@ -7,4 +7,5 @@ public interface IQuestionType {
     Optional<QuestionType> findQuestionTypeById (Long qId);
     Optional<QuestionType> findQuestionTypeByType (String type);
     Iterable<QuestionType> findAll();
+    QuestionType save (QuestionType questionType);
 }

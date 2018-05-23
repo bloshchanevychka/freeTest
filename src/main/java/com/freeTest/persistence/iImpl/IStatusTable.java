@@ -7,4 +7,5 @@ public interface IStatusTable {
     Optional<StatusTable> findStatusTableById (Long sId);
     Optional<StatusTable> findStatusTableByStatus (Integer status);
     Iterable<StatusTable> findAll();
+    StatusTable save(StatusTable statusTable);
 }

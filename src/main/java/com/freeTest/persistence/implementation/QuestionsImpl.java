@@ -28,4 +28,7 @@ public class QuestionsImpl implements IQuestions {
 
     @Override
     public Iterable<Questions> findAll() {return qRepository.findAll();}
+
+    @Override
+    public Questions save(Questions questions){return qRepository.save(questions);}
 }
