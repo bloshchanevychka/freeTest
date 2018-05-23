@@ -21,9 +21,9 @@ public class Test implements Serializable {
     @OneToMany(mappedBy = "testId")
     private List<TestSets> testSets;
 
-    public Test(String testName, Subject testSubj, String addInfo) {
+    public Test(String testName, Long testSubj, String addInfo) {
         this.testName = testName;
-        this.testSubj = testSubj;
+        this.testSubj.setSubjId(testSubj);
         this.addInfo = addInfo;
     }
 

@@ -20,10 +20,10 @@ public class QuestionAnswerSet implements Serializable {
     @JoinColumn(name = "status")
     private AnswerStatus status;
 
-    public QuestionAnswerSet(Questions question, Answers answer, AnswerStatus status) {
-        this.question = question;
-        this.answer = answer;
-        this.status = status;
+    public QuestionAnswerSet(Long question, Long answer, Long status) {
+        this.question.setQuestionId(question);
+        this.answer.setaId(answer);
+        this.status.setAnswerStId(setId);
     }
 
     public Long getSetId() {return setId;}

@@ -26,11 +26,11 @@ public class Result implements Serializable {
     private Date testDate;
     private Long testTime;
 
-    public Result(Test testId, Users userId, Questions questionId, Answers givenAnswer, Date testDaate, Long testTime) {
-        this.testId = testId;
-        this.userId = userId;
-        this.questionId = questionId;
-        this.givenAnswer = givenAnswer;
+    public Result(Long testId, Long userId, Long questionId, Long givenAnswer, Date testDaate, Long testTime) {
+        this.testId.setTestId(testId);
+        this.userId.setuId(userId);
+        this.questionId.setQuestionId(questionId);
+        this.givenAnswer.setaId(givenAnswer);
         this.testDate = testDaate;
         this.testTime = testTime;
     }

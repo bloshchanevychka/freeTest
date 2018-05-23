@@ -18,9 +18,9 @@ public class TestSettingsSet implements Serializable {
     @JoinColumn(name = "settingSet")
     private TestSettings settingSet;
 
-    public TestSettingsSet(Test test, TestSettings settingSet) {
-        this.test = test;
-        this.settingSet = settingSet;
+    public TestSettingsSet(Long test, Long settingSet) {
+        this.test.setTestId(test);
+        this.settingSet.setTestSettingId(settingSet);
     }
 
     public Long getSetId() {return setId;}

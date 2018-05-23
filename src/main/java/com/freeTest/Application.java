@@ -31,6 +31,8 @@ public class Application {
             questionLevelRepository.save(new QuestionLevel("Hard"));
             questionTypeRepository.save(new QuestionType("One answer question"));
             questionTypeRepository.save(new QuestionType("More than one answer question"));
+            questionTypeRepository.save(new QuestionType("conformity question"));
+            questionTypeRepository.save(new QuestionType("true/false question"));
             answersStatusRepository.save(new AnswerStatus(true));
             answersStatusRepository.save(new AnswerStatus(false));
             statusTableRepository.save(new StatusTable(0));

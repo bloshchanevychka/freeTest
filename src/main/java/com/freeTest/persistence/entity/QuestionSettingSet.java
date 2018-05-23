@@ -17,9 +17,9 @@ public class QuestionSettingSet implements Serializable {
     @JoinColumn(name = "sId")
     private QuestionSettings sId;
 
-    public QuestionSettingSet(Questions qId, QuestionSettings sId) {
-        this.qId = qId;
-        this.sId = sId;
+    public QuestionSettingSet(Long qId, Long sId) {
+        this.qId.setQuestionId(qId);
+        this.sId.setSetttingId(sId);
     }
 
     public Long getqSettingsSetId() {return qSettingsSetId;}

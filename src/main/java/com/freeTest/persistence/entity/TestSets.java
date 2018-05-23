@@ -18,9 +18,9 @@ public class TestSets implements Serializable {
     @JoinColumn(name = "questionId")
     private Questions questionId;
 
-    public TestSets(Test testId, Questions questionId) {
-        this.testId = testId;
-        this.questionId = questionId;
+    public TestSets(Long testId, Long questionId) {
+        this.testId.setTestId(testId);
+        this.questionId.setQuestionId(questionId);
     }
 
     public Long getTestSetId() {return testSetId;}

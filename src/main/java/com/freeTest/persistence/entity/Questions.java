@@ -26,10 +26,10 @@ public class Questions implements Serializable {
     @OneToMany(mappedBy = "questionId")
     private List<TestSets> testSets;
 
-    public Questions(String questionText, QuestionLevel qLevel, QuestionType questionType, String questionAddInfo) {
+    public Questions(String questionText, Long qLevel, Long questionType, String questionAddInfo) {
         this.questionText = questionText;
-        this.qLevel = qLevel;
-        this.questionType = questionType;
+        this.qLevel.setQuestionLevelId(qLevel);
+        this.questionType.setTypeId(questionType);
         this.questionAddInfo = questionAddInfo;
     }
 

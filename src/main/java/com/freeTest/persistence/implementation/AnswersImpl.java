@@ -16,7 +16,7 @@ public class AnswersImpl implements IAnswers {
     public Optional<Answers> findAnswersById(Long id) {return aRepository.findById(id);}
 
     @Override
-    public Optional<Answers> findAnswersByAnswer(String answer) {return Optional.ofNullable(aRepository.findAnswersByAnswer(answer));}
+    public Optional<Answers> findAnswerByAnswer(String answer) {return Optional.ofNullable(aRepository.findAnswerByAnswer(answer));}
 
     @Override
     public Iterable<Answers> findAll(){return aRepository.findAll();}
