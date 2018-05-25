@@ -12,18 +12,21 @@ public class Test implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long testId;
     private String testName;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "testSubj")
     private Subject testSubj;
     private String addInfo;
+
     @OneToMany(mappedBy = "test")
     private List<TestSettingsSet> testSettingSetsSets;
+
     @OneToMany(mappedBy = "testId")
     private List<TestSets> testSets;
 
-    public Test(String testName, Long testSubj, String addInfo) {
+    public Test(String testName, Subject testSubj, String addInfo) {
         this.testName = testName;
-        this.testSubj.setSubjId(testSubj);
+        this.testSubj = testSubj;
         this.addInfo = addInfo;
     }
 

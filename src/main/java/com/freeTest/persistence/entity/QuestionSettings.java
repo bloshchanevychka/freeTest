@@ -14,6 +14,7 @@ public class QuestionSettings implements Serializable {
     private Integer answAmount;
     private String help;
     private String picture;
+
     @OneToMany(mappedBy = "sId")
     private List<QuestionSettingSet> questionSettingSetsSets;
 

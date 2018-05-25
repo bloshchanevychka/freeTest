@@ -12,12 +12,11 @@ public class QuestionType implements Serializable {
     @GeneratedValue (strategy=GenerationType.IDENTITY)
     private Long typeId;
     private String type;
+
     @OneToMany(mappedBy = "questionType")
     private List<Questions> questions;
 
-    public QuestionType(String type) {
-        this.type = type;
-    }
+    public QuestionType(String type) {this.type = type;}
 
     public Long getTypeId() {return typeId;}
 

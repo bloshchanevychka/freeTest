@@ -16,6 +16,7 @@ public class TestSettings implements Serializable {
     private Boolean showAnsw;
     private String help;
     private Boolean showRules;
+
     @OneToMany(mappedBy = "settingSet")
     private List<TestSettingsSet> testSettingSetsSets;
 

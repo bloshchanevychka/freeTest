@@ -16,20 +16,20 @@ public class Users implements Serializable {
     private String uFullName;
     private String uEmail;
     private String uPassword;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "uStatus")
     private StatusTable uStatus;
+
     @OneToMany(mappedBy = "userId")
     private List<Result> results;
 
-    public Users(Long uId, String uLogin, String uFullName, String uEmail, String uPassword, Long status) {
-        this.uId = uId;
+    public Users(String uLogin, String uFullName, String uEmail, String uPassword, StatusTable uStatus) {
         this.uLogin = uLogin;
         this.uFullName = uFullName;
         this.uEmail = uEmail;
         this.uPassword = uPassword;
-        this.uStatus.setStatusId(status);
-
+        this.uStatus = uStatus;
     }
 
     public Long getuId() {return uId;}

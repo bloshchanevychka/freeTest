@@ -12,6 +12,7 @@ public class Subject implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long subjId;
     private String subject;
+
     @OneToMany(mappedBy = "testSubj")
     private List<Test> tests;
 

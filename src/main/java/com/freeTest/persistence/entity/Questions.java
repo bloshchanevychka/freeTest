@@ -12,24 +12,29 @@ public class Questions implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long questionId;
     private String questionText;
+
     @ManyToOne (fetch = FetchType.LAZY)
     @JoinColumn(name = "qLevel")
     private QuestionLevel qLevel;
+
     @ManyToOne (fetch = FetchType.LAZY)
     @JoinColumn(name = "questionType")
     private QuestionType questionType;
     private String questionAddInfo;
+
     @OneToMany(mappedBy = "qId")
     private List<QuestionSettingSet> questionSettingSetsSets;
+
     @OneToMany(mappedBy = "questionId")
     private List<Result> results;
+
     @OneToMany(mappedBy = "questionId")
     private List<TestSets> testSets;
 
-    public Questions(String questionText, Long qLevel, Long questionType, String questionAddInfo) {
+    public Questions(String questionText, QuestionLevel qLevel, QuestionType questionType, String questionAddInfo) {
         this.questionText = questionText;
-        this.qLevel.setQuestionLevelId(qLevel);
-        this.questionType.setTypeId(questionType);
+        this.qLevel = qLevel;
+        this.questionType = questionType;
         this.questionAddInfo = questionAddInfo;
     }
 

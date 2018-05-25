@@ -29,7 +29,7 @@ public class QuestionService {
     public Questions createQuestion(String qText, String qAddInfo, String qType, String qLevel){
         QuestionType questionType = iQuestionType.findQuestionTypeByType(qType).orElseThrow(()->new RuntimeException());
         QuestionLevel questionLevel = iQuestionLevel.findQuestionLevelByQuestionLevel(qLevel).orElseThrow(()->new RuntimeException());
-        Questions questions = new Questions(qText, questionLevel.getQuestionLevelId(), questionType.getTypeId(), qAddInfo);
+        Questions questions = new Questions(qText, questionLevel, questionType, qAddInfo);
         questions.setQuestionType(questionType);
         questions.setqLevel(questionLevel);
         questions = iQuestions.save(questions);
@@ -48,20 +48,19 @@ public class QuestionService {
         return questionSettings;
     }
 
-    public QuestionAnswerSet AddAnswersToQuestion(String question, String answer, boolean status) {
+    public QuestionAnswerSet addAnswersToQuestion(String question, String answer, boolean status) {
         Questions questions = iQuestions.findQuestionsByQuestionText(question).orElseThrow(()-> new RuntimeException());
         Answers answers = iAnswers.findAnswerByAnswer(answer).orElseThrow(()-> new RuntimeException());
         AnswerStatus answerStatus = iAnswersStatus.findAnswerStatusByaStatus(status).orElseThrow(()-> new RuntimeException());
-        QuestionAnswerSet questionAnswerSet = new QuestionAnswerSet(questions.getQuestionId(), answers.getaId(), answerStatus.getAnswerStId());
+        QuestionAnswerSet questionAnswerSet = new QuestionAnswerSet(questions, answers, answerStatus);
         questionAnswerSet = iQuestionAnswerSet.save(questionAnswerSet);
         return questionAnswerSet;
-
     }
 
     public QuestionSettingSet AddSettingsForQuestion (String question, Integer setting){
         Questions questionsQ = iQuestions.findQuestionsByQuestionText(question).orElseThrow(()->new RuntimeException());
         QuestionSettings questionSettings = iQuestionSettings.findQuestionSettingsByAnswAmount(setting).orElseThrow(()->new RuntimeException());
-        QuestionSettingSet questionSettingSet = new QuestionSettingSet(questionsQ.getQuestionId(), questionSettings.getSetttingId());
+        QuestionSettingSet questionSettingSet = new QuestionSettingSet(questionsQ, questionSettings);
         questionSettingSet = iQuestionSettingsSet.save(questionSettingSet);
         return questionSettingSet;
     }

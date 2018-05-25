@@ -12,14 +12,14 @@ public class Answers implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long aId;
     private String answer;
+
     @OneToMany(mappedBy = "answer")
     private List<QuestionAnswerSet> questionAnswerSets;
+
     @OneToMany(mappedBy = "givenAnswer")
     private List<Result> results;
 
-    public Answers(String answer) {
-        this.answer = answer;
-    }
+    public Answers(String answer) {this.answer = answer;}
 
     public Long getaId() {return aId;}
 

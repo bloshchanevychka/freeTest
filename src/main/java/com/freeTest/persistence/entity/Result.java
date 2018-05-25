@@ -11,27 +11,31 @@ public class Result implements Serializable {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long resId;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "testId")
     private Test testId;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId")
     private Users userId;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "questionId")
     private Questions questionId;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "givenAnswer")
     private Answers givenAnswer;
     private Date testDate;
     private Long testTime;
 
-    public Result(Long testId, Long userId, Long questionId, Long givenAnswer, Date testDaate, Long testTime) {
-        this.testId.setTestId(testId);
-        this.userId.setuId(userId);
-        this.questionId.setQuestionId(questionId);
-        this.givenAnswer.setaId(givenAnswer);
-        this.testDate = testDaate;
+    public Result(Test testId, Users userId, Questions questionId, Answers givenAnswer, Date testDate, Long testTime) {
+        this.testId = testId;
+        this.userId = userId;
+        this.questionId = questionId;
+        this.givenAnswer = givenAnswer;
+        this.testDate = testDate;
         this.testTime = testTime;
     }
 

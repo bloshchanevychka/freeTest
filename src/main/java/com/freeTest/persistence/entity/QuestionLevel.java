@@ -12,12 +12,11 @@ public class QuestionLevel implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long questionLevelId;
     private String questionLevel;
+
     @OneToMany(mappedBy = "qLevel")
     private List<Questions> questions;
 
-    public QuestionLevel(String level) {
-        this.questionLevel = level;
-    }
+    public QuestionLevel(String level) {this.questionLevel = level;}
 
     public Long getQuestionLevelId() {return questionLevelId;}
 

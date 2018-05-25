@@ -12,12 +12,11 @@ public class StatusTable implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long statusId;
     private Integer status;
+
     @OneToMany(mappedBy = "uStatus")
     private List <Users> users;
 
-    public StatusTable (Integer status) {
-        this.status = status;
-    }
+    public StatusTable (Integer status) {this.status = status;}
 
     public Long getStatusId() {return statusId;}
 

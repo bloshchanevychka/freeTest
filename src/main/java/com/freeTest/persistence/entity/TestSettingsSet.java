@@ -7,20 +7,21 @@ import java.io.Serializable;
 @NoArgsConstructor
 @Entity
 public class TestSettingsSet implements Serializable {
-
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long setId;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "test")
     private Test test;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "settingSet")
     private TestSettings settingSet;
 
-    public TestSettingsSet(Long test, Long settingSet) {
-        this.test.setTestId(test);
-        this.settingSet.setTestSettingId(settingSet);
+    public TestSettingsSet(Test test, TestSettings settingSet) {
+        this.test = test;
+        this.settingSet = settingSet;
     }
 
     public Long getSetId() {return setId;}

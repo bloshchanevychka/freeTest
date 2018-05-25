@@ -12,6 +12,7 @@ public class AnswerStatus implements Serializable {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long answerStId;
     private boolean aStatus;
+
     @OneToMany(mappedBy = "status")
     private List <QuestionAnswerSet> questionAnswerSets;
 
