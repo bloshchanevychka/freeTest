@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 @Transactional
 @AllArgsConstructor
-public class QuestionService {
+public  class QuestionService {
 
     private IQuestions iQuestions;
     private IAnswers iAnswers;
