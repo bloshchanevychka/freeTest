@@ -4,7 +4,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 
-
 @NoArgsConstructor
 @Entity
 public class TestSets implements Serializable {

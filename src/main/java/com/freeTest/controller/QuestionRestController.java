@@ -1,5 +1,6 @@
 package com.freeTest.controller;
 
+import com.freeTest.persistence.entity.QuestionType;
 import com.freeTest.persistence.entity.Questions;
 import com.freeTest.persistence.repository.*;
 import com.freeTest.service.QuestionService;
@@ -19,20 +20,23 @@ public class QuestionRestController {
         this.questionService = questionService;
     }
 
-    /*GetMapping
-    public ResponseEntity<?> findAllQuestions(){
-
-        return ResponseEntity.ok();
-    }
-    */
-    @GetMapping(value = "/{id}")
+       @GetMapping(value = "/{id}")
     public ResponseEntity<?> findQuestionById(@PathVariable Long id){
         Questions questions = questionService.findQuestionById(id);
         return ResponseEntity.ok(questions);
     }
 
-//    @PostMapping
-    //@ReuestBody
-//    @RequestMapping (method = RequestMethod.GET)
-//    Resources <>
+    @PostMapping
+    public ResponseEntity<?> create(@RequestBody Questions questions,String qType, String qLevel){
+        Questions questionsResult = questionService.createQuestion(questions,qType, qLevel);
+        return ResponseEntity.ok(questions);
+    }
+
+    @PostMapping
+    public ResponseEntity<?> create(@RequestBody String qType){
+        QuestionType questions = questionService.createQType(qType);
+        return ResponseEntity.ok(questions);
+    }
+
+
 }

@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -26,10 +28,18 @@ public  class QuestionService {
         return iQuestions.findQuestionsById(id).orElseThrow(()->new RuntimeException());
     }
 
-    public Questions createQuestion(String qText, String qAddInfo, String qType, String qLevel){
+    public Questions findQuestionByQText(String text){
+        return iQuestions.findQuestionsByQuestionText(text).orElseThrow(()->new RuntimeException());
+    }
+
+    public Answers findAnswer(String text){
+        return iAnswers.findAnswerByAnswer(text).orElseThrow(()->new RuntimeException());
+    }
+
+    public Questions createQuestion(Questions questions,String qType, String qLevel){
         QuestionType questionType = iQuestionType.findQuestionTypeByType(qType).orElseThrow(()->new RuntimeException());
         QuestionLevel questionLevel = iQuestionLevel.findQuestionLevelByQuestionLevel(qLevel).orElseThrow(()->new RuntimeException());
-        Questions questions = new Questions(qText, questionLevel, questionType, qAddInfo);
+//        Questions questions = new Questions(qText, questionLevel, questionType, qAddInfo);
         questions.setQuestionType(questionType);
         questions.setqLevel(questionLevel);
         questions = iQuestions.save(questions);
@@ -42,6 +52,18 @@ public  class QuestionService {
         return answers;
     }
 
+    public QuestionType createQType(String typeName){
+        QuestionType questionType = new QuestionType(typeName);
+        questionType = iQuestionType.save(questionType);
+        return questionType;
+    }
+
+    public QuestionLevel createQLevel(String levelName){
+        QuestionLevel questionLevel = new QuestionLevel(levelName);
+        questionLevel = iQuestionLevel.save(questionLevel);
+        return questionLevel;
+    }
+
     public QuestionSettings createSettings(Integer answAmount, String help, String picture){
         QuestionSettings questionSettings = new QuestionSettings(answAmount, help, picture);
         questionSettings = iQuestionSettings.save(questionSettings);
@@ -49,8 +71,8 @@ public  class QuestionService {
     }
 
     public QuestionAnswerSet addAnswersToQuestion(String question, String answer, boolean status) {
-        Questions questions = iQuestions.findQuestionsByQuestionText(question).orElseThrow(()-> new RuntimeException());
-        Answers answers = iAnswers.findAnswerByAnswer(answer).orElseThrow(()-> new RuntimeException());
+        Questions questions = findQuestionByQText(question);
+        Answers answers = findAnswer(answer);
         AnswerStatus answerStatus = iAnswersStatus.findAnswerStatusByaStatus(status).orElseThrow(()-> new RuntimeException());
         QuestionAnswerSet questionAnswerSet = new QuestionAnswerSet(questions, answers, answerStatus);
         questionAnswerSet = iQuestionAnswerSet.save(questionAnswerSet);
@@ -63,6 +85,14 @@ public  class QuestionService {
         QuestionSettingSet questionSettingSet = new QuestionSettingSet(questionsQ, questionSettings);
         questionSettingSet = iQuestionSettingsSet.save(questionSettingSet);
         return questionSettingSet;
+    }
+
+
+    // ask a question
+    public QuestionAnswerSet selectByType (String questionType){
+            Questions question = iQuestions.findQuestionsByQuestionType(iQuestionType.findQuestionTypeByType(questionType).orElseThrow(()-> new RuntimeException()).getTypeId()).orElseThrow(()-> new RuntimeException());
+            QuestionAnswerSet questionAnswerSet = iQuestionAnswerSet.findQuestionAnswerSetByQuestion(question.getQuestionId()).orElseThrow(()-> new RuntimeException());
+            return questionAnswerSet;
     }
 
 }

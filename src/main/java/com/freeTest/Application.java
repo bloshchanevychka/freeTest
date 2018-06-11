@@ -4,10 +4,9 @@ import com.freeTest.persistence.entity.AnswerStatus;
 import com.freeTest.persistence.entity.QuestionLevel;
 import com.freeTest.persistence.entity.QuestionType;
 import com.freeTest.persistence.entity.StatusTable;
-import com.freeTest.persistence.repository.AnswersStatusRepository;
-import com.freeTest.persistence.repository.QuestionLevelRepository;
-import com.freeTest.persistence.repository.QuestionTypeRepository;
-import com.freeTest.persistence.repository.StatusTableRepository;
+import com.freeTest.persistence.implementation.QuestionTypeImpl;
+import com.freeTest.persistence.repository.*;
+import org.aspectj.weaver.patterns.TypePatternQuestions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -28,7 +27,7 @@ public class Application {
     }
 
     @Bean
-    CommandLineRunner init(QuestionLevelRepository questionLevelRepository, QuestionTypeRepository questionTypeRepository, AnswersStatusRepository answersStatusRepository, StatusTableRepository statusTableRepository){
+    CommandLineRunner init(QuestionLevelRepository questionLevelRepository, QuestionTypeRepository questionTypeRepository, AnswersStatusRepository answersStatusRepository, StatusTableRepository statusTableRepository, QuestionsRepository questionsRepository){
         return (args) -> {
             questionLevelRepository.save(new QuestionLevel("Easy"));
             questionLevelRepository.save(new QuestionLevel("Medium"));

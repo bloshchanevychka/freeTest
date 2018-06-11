@@ -1,10 +1,7 @@
 package com.freeTest.service;
 
 import com.freeTest.persistence.entity.*;
-import com.freeTest.persistence.iImpl.ISubject;
-import com.freeTest.persistence.iImpl.ITest;
-import com.freeTest.persistence.iImpl.ITestSettings;
-import com.freeTest.persistence.iImpl.ITestSettingsSet;
+import com.freeTest.persistence.iImpl.*;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,6 +14,11 @@ public class TestService {
     private ITest iTest;
     private ITestSettings iTestSettings;
     private ITestSettingsSet iTestSettingsSet;
+    private IQuestionType iQuestionType;
+    private IQuestionLevel iQuestionLevel;
+    private IQuestionSettings iQuestionSettings;
+    private IQuestionSettingsSet iQuestionSettingsSet;
+
     private QuestionService questionService;
 
     private Test findTestById(Long id){
@@ -35,18 +37,13 @@ public class TestService {
         return testSettings;
     }
 
-//    private TestSets createTest(String testName, Subject testSubj, String addInfo, Long testID, Long questionID){
-//
-//        Test test = iTest.findTestById(testID).orElseThrow(()->new RuntimeException());
-//
-//
-//        QuestionType questionType = iQuestionType.findQuestionTypeByType(qType).orElseThrow(()->new RuntimeException());
-//        QuestionLevel questionLevel = iQuestionLevel.findQuestionLevelByQuestionLevel(qLevel).orElseThrow(()->new RuntimeException());
-//        Questions questions = new Questions(qText, questionLevel, questionType, qAddInfo);
-//        questions.setQuestionType(questionType);
-//        questions.setqLevel(questionLevel);
-//        questions = iQuestions.save(questions);
-//        return questions;
-//    }
+    private TestSets createTest (String testName, Subject testSubj, String testAddInfo, String question){
+        Test test = new Test(testName, testSubj, testAddInfo);
+        TestSets testSets= new TestSets(test, questionService.findQuestionByQText(question));
+        return testSets;
+    }
+
+
+
 }
 
