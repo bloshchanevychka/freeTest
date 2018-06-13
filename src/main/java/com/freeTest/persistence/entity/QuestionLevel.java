@@ -1,5 +1,6 @@
 package com.freeTest.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,6 +15,7 @@ public class QuestionLevel implements Serializable {
     private String questionLevel;
 
     @OneToMany(mappedBy = "qLevel")
+    @JsonManagedReference
     private List<Questions> questions;
 
     public QuestionLevel(String level) {this.questionLevel = level;}

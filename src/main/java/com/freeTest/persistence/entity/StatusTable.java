@@ -1,5 +1,6 @@
 package com.freeTest.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,6 +15,7 @@ public class StatusTable implements Serializable {
     private Integer status;
 
     @OneToMany(mappedBy = "uStatus")
+    @JsonManagedReference
     private List <Users> users;
 
     public StatusTable (Integer status) {this.status = status;}

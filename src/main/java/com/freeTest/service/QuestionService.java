@@ -28,6 +28,18 @@ public  class QuestionService {
         return iQuestions.findAll();
     }
 
+    public List<QuestionType> findAllQTypes(){
+        return iQuestionType.findAll();
+    }
+
+    public List<QuestionLevel> findAllQLevels(){
+        return iQuestionLevel.findAll();
+    }
+
+    public List<Answers> findAllAnswers(){
+        return iAnswers.findAll();
+    }
+
     public Questions findQuestionById(Long id){
         return iQuestions.findQuestionsById(id).orElseThrow(()->new RuntimeException());
     }
@@ -90,8 +102,6 @@ public  class QuestionService {
         questionSettingSet = iQuestionSettingsSet.save(questionSettingSet);
         return questionSettingSet;
     }
-
-
     // ask a question
     public QuestionAnswerSet selectByType (String questionType){
             Questions question = iQuestions.findQuestionsByQuestionType(iQuestionType.findQuestionTypeByType(questionType).orElseThrow(()-> new RuntimeException()).getTypeId()).orElseThrow(()-> new RuntimeException());

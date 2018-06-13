@@ -26,11 +26,25 @@ public class QuestionRestController {
         return ResponseEntity.ok(questions);
     }
 
-    @GetMapping("/questions")
+    @GetMapping
     public ResponseEntity<?> getQuestList(){
         return ResponseEntity.ok(questionService.findAllQuestions());
     }
 
+    @GetMapping("/types")
+    public ResponseEntity<?> getQuestTypeList(){
+        return ResponseEntity.ok(questionService.findAllQTypes());
+    }
+    @GetMapping("/levels")
+    public ResponseEntity<?> getQuestLevelList(){
+        return ResponseEntity.ok(questionService.findAllQLevels());
+    }
+
+
+    @GetMapping("/answers")
+    public ResponseEntity<?> getAnswerList(){
+        return ResponseEntity.ok(questionService.findAllAnswers());
+    }
 //    @PostMapping
 //    public ResponseEntity<?> create(@RequestBody Questions questions,String qType, String qLevel){
 //        Questions questionsResult = questionService.createQuestion(questions,qType, qLevel);

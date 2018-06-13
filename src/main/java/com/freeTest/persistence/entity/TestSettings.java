@@ -1,5 +1,6 @@
 package com.freeTest.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
@@ -18,6 +19,7 @@ public class TestSettings implements Serializable {
     private Boolean showRules;
 
     @OneToMany(mappedBy = "settingSet")
+    @JsonManagedReference
     private List<TestSettingsSet> testSettingSetsSets;
 
     public TestSettings(Long timeSettings, boolean securitySettings, boolean showAnsw, String help, boolean showRules) {

@@ -1,5 +1,6 @@
 package com.freeTest.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,6 +15,7 @@ public class Subject implements Serializable {
     private String subject;
 
     @OneToMany(mappedBy = "testSubj")
+    @JsonManagedReference
     private List<Test> tests;
 
     public Subject(String subject) {this.subject = subject;}

@@ -1,5 +1,6 @@
 package com.freeTest.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,18 +15,22 @@ public class Result implements Serializable {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "testId")
+    @JsonBackReference
     private Test testId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId")
+    @JsonBackReference
     private Users userId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "questionId")
+    @JsonBackReference
     private Questions questionId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "givenAnswer")
+    @JsonBackReference
     private Answers givenAnswer;
     private Date testDate;
     private Long testTime;

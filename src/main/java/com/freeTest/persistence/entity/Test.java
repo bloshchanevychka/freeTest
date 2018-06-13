@@ -1,5 +1,7 @@
 package com.freeTest.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,13 +17,16 @@ public class Test implements Serializable {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "testSubj")
+    @JsonBackReference
     private Subject testSubj;
     private String addInfo;
 
     @OneToMany(mappedBy = "test")
+    @JsonManagedReference
     private List<TestSettingsSet> testSettingSetsSets;
 
     @OneToMany(mappedBy = "testId")
+    @JsonManagedReference
     private List<TestSets> testSets;
 
     public Test(String testName, Subject testSubj, String addInfo) {

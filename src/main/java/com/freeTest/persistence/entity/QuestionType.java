@@ -1,5 +1,6 @@
 package com.freeTest.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,6 +15,7 @@ public class QuestionType implements Serializable {
     private String type;
 
     @OneToMany(mappedBy = "questionType")
+    @JsonManagedReference
     private List<Questions> questions;
 
     public QuestionType(String type) {this.type = type;}

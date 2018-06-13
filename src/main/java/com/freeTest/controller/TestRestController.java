@@ -20,7 +20,7 @@ public class TestRestController {
         return ResponseEntity.ok(subject);
     }
 
-    @GetMapping("/questions")
+    @GetMapping("/subjects")
     public ResponseEntity<?> getSubList(){
         return ResponseEntity.ok(testService.findAllSubjects());
     }

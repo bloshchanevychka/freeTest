@@ -1,5 +1,7 @@
 package com.freeTest.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
@@ -14,6 +16,7 @@ public class AnswerStatus implements Serializable {
     private boolean aStatus;
 
     @OneToMany(mappedBy = "status")
+    @JsonManagedReference
     private List <QuestionAnswerSet> questionAnswerSets;
 
     public AnswerStatus(boolean aStatus) {

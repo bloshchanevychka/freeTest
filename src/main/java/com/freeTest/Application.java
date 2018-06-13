@@ -4,6 +4,7 @@ import com.freeTest.persistence.entity.*;
 import com.freeTest.persistence.iImpl.IQuestionLevel;
 import com.freeTest.persistence.implementation.QuestionTypeImpl;
 import com.freeTest.persistence.repository.*;
+import com.freeTest.service.QuestionService;
 import org.aspectj.weaver.patterns.TypePatternQuestions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,7 +29,7 @@ public class Application {
     }
 
     @Bean
-    CommandLineRunner init( QuestionAnswerSetRepository questionAnswerSetRepository, QuestionLevelRepository questionLevelRepository, QuestionTypeRepository questionTypeRepository, AnswersStatusRepository answersStatusRepository,SubjectRepository subjectRepository, StatusTableRepository statusTableRepository, QuestionsRepository questionsRepository, AnswersRepository answersRepository){
+    CommandLineRunner init(QuestionService questionService, QuestionAnswerSetRepository questionAnswerSetRepository, QuestionLevelRepository questionLevelRepository, QuestionTypeRepository questionTypeRepository, AnswersStatusRepository answersStatusRepository, SubjectRepository subjectRepository, StatusTableRepository statusTableRepository, QuestionsRepository questionsRepository, AnswersRepository answersRepository){
 
         return (args) -> {
             questionLevelRepository.save(new QuestionLevel("Easy"));
@@ -57,8 +58,10 @@ public class Application {
             answersRepository.save(new Answers("washing"));
             answersStatusRepository.save(new AnswerStatus(true));
             answersStatusRepository.save(new AnswerStatus(false));
-  //          questionAnswerSetRepository.save(new QuestionAnswerSet(questionsRepository.findQuestionsByQuestionText("I ___ tired, so I went to bed early yesterday."),answersRepository.findAnswerByAnswer("was") ,answersStatusRepository.findAnswerStatusByAStatus(true)));
-  //          questionAnswerSetRepository.save(new QuestionAnswerSet(questionsRepository.findQuestionsByQuestionText("I ___ tired, so I went to bed early yesterday."),answersRepository.findAnswerByAnswer("is") ,answersStatusRepository.findAnswerStatusByAStatus(false)));
+          //  questionService.addAnswersToQuestion("I ___ tired, so I went to bed early yesterday.","was", true);
+//            questionAnswerSetRepository.save(new QuestionAnswerSet(questionsRepository.findById(1l),
+//                    answersRepository.findById(1l), answersStatusRepository.findById(1l)));
+  //        questionAnswerSetRepository.save(new QuestionAnswerSet(questionsRepository.findQuestionsByQuestionText("I ___ tired, so I went to bed early yesterday."),answersRepository.findAnswerByAnswer("is") ,answersStatusRepository.findAnswerStatusByAStatus(false)));
 //            questionAnswerSetRepository.save(new QuestionAnswerSet(questionsRepository.findQuestionsByQuestionText("I ___ tired, so I went to bed early yesterday."),answersRepository.findAnswerByAnswer("am") ,answersStatusRepository.findAnswerStatusByAStatus(false)));
 //            questionAnswerSetRepository.save(new QuestionAnswerSet(questionsRepository.findQuestionsByQuestionText("I ___ tired, so I went to bed early yesterday."),answersRepository.findAnswerByAnswer("were") ,answersStatusRepository.findAnswerStatusByAStatus(false)));
 //
