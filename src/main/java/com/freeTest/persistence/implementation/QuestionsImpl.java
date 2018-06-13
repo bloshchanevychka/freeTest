@@ -3,9 +3,11 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Questions;
 import com.freeTest.persistence.iImpl.IQuestions;
 import com.freeTest.persistence.repository.QuestionsRepository;
+import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -27,7 +29,7 @@ public class QuestionsImpl implements IQuestions {
     public Optional<Questions> findQuestionsByQuestionText(String text) {return Optional.ofNullable(qRepository.findQuestionsByQuestionText(text));}
 
     @Override
-    public Iterable<Questions> findAll() {return qRepository.findAll();}
+    public List<Questions> findAll() {return Lists.newArrayList(qRepository.findAll());}
 
     @Override
     public Questions save(Questions questions){return qRepository.save(questions);}

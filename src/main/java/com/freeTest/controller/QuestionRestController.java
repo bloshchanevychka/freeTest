@@ -20,23 +20,28 @@ public class QuestionRestController {
         this.questionService = questionService;
     }
 
-       @GetMapping(value = "/{id}")
+    @GetMapping(value = "/{id}")
     public ResponseEntity<?> findQuestionById(@PathVariable Long id){
         Questions questions = questionService.findQuestionById(id);
         return ResponseEntity.ok(questions);
     }
 
-    @PostMapping
-    public ResponseEntity<?> create(@RequestBody Questions questions,String qType, String qLevel){
-        Questions questionsResult = questionService.createQuestion(questions,qType, qLevel);
-        return ResponseEntity.ok(questions);
+    @GetMapping("/questions")
+    public ResponseEntity<?> getQuestList(){
+        return ResponseEntity.ok(questionService.findAllQuestions());
     }
 
-    @PostMapping
-    public ResponseEntity<?> create(@RequestBody String qType){
-        QuestionType questions = questionService.createQType(qType);
-        return ResponseEntity.ok(questions);
-    }
+//    @PostMapping
+//    public ResponseEntity<?> create(@RequestBody Questions questions,String qType, String qLevel){
+//        Questions questionsResult = questionService.createQuestion(questions,qType, qLevel);
+//        return ResponseEntity.ok(questions);
+//    }
+//
+//    @PostMapping
+//    public ResponseEntity<?> create(@RequestBody String qType){
+//        QuestionType questions = questionService.createQType(qType);
+//        return ResponseEntity.ok(questions);
+//    }
 
 
 }

@@ -24,6 +24,10 @@ public  class QuestionService {
     private IQuestionSettingsSet iQuestionSettingsSet;
     private IQuestionAnswerSet iQuestionAnswerSet;
 
+    public List<Questions> findAllQuestions(){
+        return iQuestions.findAll();
+    }
+
     public Questions findQuestionById(Long id){
         return iQuestions.findQuestionsById(id).orElseThrow(()->new RuntimeException());
     }
