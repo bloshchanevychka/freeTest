@@ -1,6 +1,8 @@
 package com.freeTest.persistence.iImpl;
 
 import com.freeTest.persistence.entity.Users;
+
+import java.util.List;
 import java.util.Optional;
 
 public interface IUsers  {
@@ -10,6 +12,6 @@ public interface IUsers  {
     Optional<Users> findUsersByULogin(String login);
     Optional<Users> findUsersByEmail(String email);
     Optional<Users> findUsersByUStatus(Long status);
-    Iterable<Users> findAll();
+    List<Users> findAll();
     Users save(Users users);
 }

@@ -3,9 +3,12 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Answers;
 import com.freeTest.persistence.iImpl.IAnswers;
 import com.freeTest.persistence.repository.AnswersRepository;
+import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
+import javax.validation.constraints.Max;
+import java.util.List;
 import java.util.Optional;
 @Repository
 @AllArgsConstructor
@@ -19,7 +22,7 @@ public class AnswersImpl implements IAnswers {
     public Optional<Answers> findAnswerByAnswer(String answer) {return Optional.ofNullable(aRepository.findAnswerByAnswer(answer));}
 
     @Override
-    public Iterable<Answers> findAll(){return aRepository.findAll();}
+    public List<Answers> findAll(){return Lists.newArrayList(aRepository.findAll());}
 
     @Override
     public Answers save (Answers answer) {return aRepository.save(answer);}

@@ -3,10 +3,12 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Result;
 import com.freeTest.persistence.iImpl.IResult;
 import com.freeTest.persistence.repository.ResultRepository;
+import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 @Repository
 @AllArgsConstructor
@@ -29,7 +31,7 @@ public class ResultImpl implements IResult {
     public Optional <Result> findResultByGivenAnswer(Long answerId) {return Optional.ofNullable(resultRepository.findResultByGivenAnswer(answerId));}
 
     @Override
-    public Iterable<Result> findAll() {return resultRepository.findAll();}
+    public List<Result> findAll() {return Lists.newArrayList(resultRepository.findAll());}
 
     @Override
     public Result save(Result result) {return resultRepository.save(result);}

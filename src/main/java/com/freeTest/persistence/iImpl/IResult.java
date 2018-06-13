@@ -2,6 +2,7 @@ package com.freeTest.persistence.iImpl;
 
 import com.freeTest.persistence.entity.Result;
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 public interface IResult {
@@ -10,6 +11,6 @@ public interface IResult {
     Optional <Result> findResultByTestId (Long testId);
     Optional <Result> findResultByUserId (Long userId);
     Optional <Result> findResultByGivenAnswer (Long answerId);
-    Iterable<Result> findAll();
+    List<Result> findAll();
     Result save(Result result);
 }

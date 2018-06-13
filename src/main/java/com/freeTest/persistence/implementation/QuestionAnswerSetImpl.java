@@ -4,9 +4,11 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.QuestionAnswerSet;
 import com.freeTest.persistence.iImpl.IQuestionAnswerSet;
 import com.freeTest.persistence.repository.QuestionAnswerSetRepository;
+import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 @Repository
 @AllArgsConstructor
@@ -27,7 +29,7 @@ public class QuestionAnswerSetImpl implements IQuestionAnswerSet {
     public Optional<QuestionAnswerSet> findQuestionAnswerSetByStatus(Long sId){return Optional.ofNullable(setRepository.findQuestionAnswerSetByStatus(sId));};
 
     @Override
-    public Iterable<QuestionAnswerSet> findAll() {return setRepository.findAll();}
+    public List<QuestionAnswerSet> findAll() {return Lists.newArrayList(setRepository.findAll());}
 
     @Override
     public QuestionAnswerSet save(QuestionAnswerSet questionAnswerSet) {return setRepository.save(questionAnswerSet);}

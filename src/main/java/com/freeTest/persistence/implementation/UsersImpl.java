@@ -3,9 +3,11 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.Users;
 import com.freeTest.persistence.iImpl.IUsers;
 import com.freeTest.persistence.repository.UsersRepository;
+import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 @Repository
 @AllArgsConstructor
@@ -34,7 +36,7 @@ public class UsersImpl implements IUsers {
     public Optional<Users> findUsersByUStatus(Long status) {return Optional.ofNullable(usersRepository.findUsersByUStatus(status));}
 
     @Override
-    public Iterable<Users> findAll() {return usersRepository.findAll();}
+    public List<Users> findAll() {return Lists.newArrayList(usersRepository.findAll());}
 
     @Override
     public Users save(Users users) {return usersRepository.save(users);}

@@ -1,6 +1,8 @@
 package com.freeTest.persistence.iImpl;
 
 import com.freeTest.persistence.entity.TestSettings;
+
+import java.util.List;
 import java.util.Optional;
 
 public interface ITestSettings {
@@ -8,6 +10,6 @@ public interface ITestSettings {
     Optional<TestSettings> findTestSettingsByTimeSettings (Long time);
     Optional<TestSettings> findTestSettingsBySecuritySettings (Boolean security);
     Optional<TestSettings> findTestSettingsByShowAnsw (Boolean answShow);
-    Iterable<TestSettings> findAll();
+    List<TestSettings> findAll();
     TestSettings save(TestSettings testSettings);
 }

@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 @AllArgsConstructor
@@ -21,8 +23,15 @@ public class TestService {
 
     private QuestionService questionService;
 
-    private Test findTestById(Long id){
+    public Test findTestById(Long id){
        return iTest.findTestById(id).orElseThrow(()->new RuntimeException());
+    }
+    public Subject findSubject(Long id){
+        return iSubject.findSubjectById(id).orElseThrow(()->new RuntimeException());
+    }
+
+    public List<Subject> findAllSubjects(){
+        return iSubject.findAll();
     }
 
     private Subject createSubject (String subject){

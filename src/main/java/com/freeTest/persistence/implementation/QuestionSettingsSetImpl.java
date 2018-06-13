@@ -3,9 +3,11 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.QuestionSettingSet;
 import com.freeTest.persistence.iImpl.IQuestionSettingsSet;
 import com.freeTest.persistence.repository.QuestionSettingsSetRepository;
+import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 @Repository
 @AllArgsConstructor
@@ -22,7 +24,7 @@ public class QuestionSettingsSetImpl implements IQuestionSettingsSet {
     public Optional<QuestionSettingSet> findQuestionSettingSetByQIdAndSId(Long qId, Long settingId){return Optional.ofNullable(questionSettingsSetRepository.findQuestionSettingSetByQIdAndSId(qId, settingId));}
 
     @Override
-    public Iterable<QuestionSettingSet> findAll() {return questionSettingsSetRepository.findAll();}
+    public List<QuestionSettingSet> findAll() {return Lists.newArrayList(questionSettingsSetRepository.findAll());}
 
     @Override
     public QuestionSettingSet save(QuestionSettingSet questionSettingSet){return questionSettingsSetRepository.save(questionSettingSet);}

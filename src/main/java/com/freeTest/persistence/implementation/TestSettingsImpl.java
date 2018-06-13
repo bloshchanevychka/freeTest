@@ -3,9 +3,11 @@ package com.freeTest.persistence.implementation;
 import com.freeTest.persistence.entity.TestSettings;
 import com.freeTest.persistence.iImpl.ITestSettings;
 import com.freeTest.persistence.repository.TestSettingsRepository;
+import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 @Repository
 @AllArgsConstructor
@@ -25,7 +27,7 @@ public class TestSettingsImpl implements ITestSettings {
     public Optional<TestSettings> findTestSettingsByShowAnsw(Boolean answShow) {return Optional.ofNullable(testSettingsRepository.findTestSettingsByShowAnsw(answShow));}
 
     @Override
-    public Iterable<TestSettings> findAll() {return testSettingsRepository.findAll();}
+    public List<TestSettings> findAll() {return Lists.newArrayList(testSettingsRepository.findAll());}
 
     @Override
     public TestSettings save(TestSettings testSettings){return testSettingsRepository.save(testSettings);}
